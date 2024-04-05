@@ -7,11 +7,17 @@ let categorizedQuestions = {};
 async function start() {
   registerButtons();
   await getQuestions();
-  categorizeQuestions();
 }
 
 function registerButtons() {
   document.querySelector(".card").addEventListener("click", flipCard);
+  const buttons = document.querySelectorAll(".categories button");
+  buttons.forEach((button) => {
+    button.addEventListener("click", function () {
+      zoomInCard();
+      document.querySelector(".overlay").style.display = "none";
+    });
+  });
 }
 
 async function getQuestions() {
@@ -27,37 +33,12 @@ async function getQuestions() {
   }
 }
 
-function categorizeQuestions() {
-  const categoryCardsContainer = document.querySelector(".category-cards");
-
-  const colors = ["#7bd1f5", "#ffb347", "#ff6961", "#77dd77", "#d4aaff"];
-
-  let colorIndex = 0;
-  for (const category in categorizedQuestions) {
-    const categoryDeck = document.createElement("div");
-    categoryDeck.classList.add("category-deck");
-
-    categorizedQuestions[category].forEach((question) => {
-      const card = document.createElement("div");
-      card.classList.add("category-card");
-      card.style.backgroundColor = colors[colorIndex];
-
-      const front = document.createElement("div");
-      front.classList.add("front");
-      front.innerText = question.question;
-
-      card.appendChild(front);
-
-      categoryDeck.appendChild(card);
-    });
-
-    categoryCardsContainer.appendChild(categoryDeck);
-
-    colorIndex = (colorIndex + 1) % colors.length;
-  }
-}
-
 function flipCard() {
   const card = document.querySelector(".card");
   card.classList.toggle("flipped");
+}
+
+function zoomInCard() {
+  const container = document.querySelector(".container");
+  container.classList.add("zoom-in");
 }
