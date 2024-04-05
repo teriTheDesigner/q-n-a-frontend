@@ -1,0 +1,94 @@
+html,
+body {
+  height: 100%;
+  margin: 0;
+  font: 16px/1.5 "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+  color: #47525d;
+}
+
+.categories {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+.category-cards {
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+}
+
+.category-deck .category-card {
+  background-color: aliceblue;
+  border-radius: 12px;
+  box-shadow: 0 6px 6px rgba(0, 0, 0, 0.05);
+  width: 160px;
+  height: 100px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: -100px;
+  position: relative;
+  font-size: 0.4rem;
+
+  z-index: 1;
+}
+
+.category-card .front {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5rem;
+}
+
+main {
+  margin-top: 10%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  width: 700px;
+  height: 400px;
+  position: relative;
+  perspective: 800px;
+  border-radius: 20px;
+}
+
+.card {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  transform-style: preserve-3d;
+  transition: transform 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  border-radius: 20px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+}
+
+.card > div {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: 20px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card .back {
+  transform: rotateY(180deg);
+  background-color: hotpink;
+}
+
+.card .front {
+  background-color: green;
+}
+
+.flipped {
+  transform: rotateY(180deg);
+}

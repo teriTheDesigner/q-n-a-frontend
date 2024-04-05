@@ -1,0 +1,179 @@
+{
+  "categories": [
+    {
+      "name": "Category 1",
+      "questions": [
+        {
+          "index": 1,
+          "question": "What is JavaScript?",
+          "answer": "JavaScript is a programming language that enables web pages to be interactive.",
+          "category": "Category 1"
+        },
+        {
+          "index": 2,
+          "question": "What is HTML?",
+          "answer": "HTML (Hypertext Markup Language) is the standard markup language for creating web pages and web applications.",
+          "category": "Category 1"
+        },
+        {
+          "index": 3,
+          "question": "What is CSS?",
+          "answer": "CSS (Cascading Style Sheets) is a style sheet language used for describing the presentation of a document written in HTML.",
+          "category": "Category 1"
+        },
+        {
+          "index": 4,
+          "question": "What is a variable in programming?",
+          "answer": "A variable is a container for storing data values, such as numbers or strings, that can change during the execution of a program.",
+          "category": "Category 1"
+        },
+        {
+          "index": 5,
+          "question": "What is a function in programming What is a function in programming?",
+          "answer": "A function is a block of reusable code that performs a specific task. It takes input, performs actions, and returns output.",
+          "category": "Category 1"
+        }
+      ]
+    },
+    {
+      "name": "Category 2",
+      "questions": [
+        {
+          "index": 1,
+          "question": "What is a loop?",
+          "answer": "A loop is a programming construct that repeats a block of code until a specified condition is met.",
+          "category": "Category 2"
+        },
+        {
+          "index": 2,
+          "question": "What is an array?",
+          "answer": "An array is a data structure that stores a collection of elements, each identified by an index.",
+          "category": "Category 2"
+        },
+        {
+          "index": 3,
+          "question": "What is an object?",
+          "answer": "An object is a collection of key-value pairs, where each key is a unique identifier for a value.",
+          "category": "Category 2"
+        },
+        {
+          "index": 4,
+          "question": "What is a method?",
+          "answer": "A method is a function that is associated with an object and can be called to perform actions or calculations on that object.",
+          "category": "Category 2"
+        },
+        {
+          "index": 5,
+          "question": "What is a conditional statement?",
+          "answer": "A conditional statement is a programming construct that executes different code depending on whether a specified condition is true or false.",
+          "category": "Category 2"
+        }
+      ]
+    },
+    {
+      "name": "Category 3",
+      "questions": [
+        {
+          "index": 1,
+          "question": "What is a database?",
+          "answer": "A database is a structured collection of data stored electronically.",
+          "category": "Category 3"
+        },
+        {
+          "index": 2,
+          "question": "What is SQL?",
+          "answer": "SQL (Structured Query Language) is a programming language used for managing and manipulating databases.",
+          "category": "Category 3"
+        },
+        {
+          "index": 3,
+          "question": "What is a primary key?",
+          "answer": "A primary key is a unique identifier for a record in a database table.",
+          "category": "Category 3"
+        },
+        {
+          "index": 4,
+          "question": "What is normalization?",
+          "answer": "Normalization is the process of organizing data in a database to reduce redundancy and improve data integrity.",
+          "category": "Category 3"
+        },
+        {
+          "index": 5,
+          "question": "What is a join?",
+          "answer": "A join is a SQL operation that combines rows from two or more tables based on a related column between them.",
+          "category": "Category 3"
+        }
+      ]
+    },
+    {
+      "name": "Category 4",
+      "questions": [
+        {
+          "index": 1,
+          "question": "What is a server?",
+          "answer": "A server is a computer or software program that provides functionality or services to other programs or devices, known as clients, over a network.",
+          "category": "Category 4"
+        },
+        {
+          "index": 2,
+          "question": "What is HTTP?",
+          "answer": "HTTP (Hypertext Transfer Protocol) is a protocol used for transmitting data over the Internet.",
+          "category": "Category 4"
+        },
+        {
+          "index": 3,
+          "question": "What is RESTful API?",
+          "answer": "A RESTful API is an architectural style for designing networked applications, where resources are represented as URIs (Uniform Resource Identifiers) and can be manipulated using standard HTTP methods.",
+          "category": "Category 4"
+        },
+        {
+          "index": 4,
+          "question": "What is a client-server model?",
+          "answer": "A client-server model is a distributed application structure in which tasks or workloads are divided between clients and servers.",
+          "category": "Category 4"
+        },
+        {
+          "index": 5,
+          "question": "What is a web server?",
+          "answer": "A web server is a software program that processes requests via HTTP, the basic network protocol used to distribute information on the World Wide Web.",
+          "category": "Category 4"
+        }
+      ]
+    },
+    {
+      "name": "Category 5",
+      "questions": [
+        {
+          "index": 1,
+          "question": "What is responsive design?",
+          "answer": "Responsive design is an approach to web design that makes web pages render well on a variety of devices and window or screen sizes.",
+          "category": "Category 5"
+        },
+        {
+          "index": 2,
+          "question": "What is mobile-first design?",
+          "answer": "Mobile-first design is a design strategy that prioritizes designing for mobile devices before designing for desktop or other devices.",
+          "category": "Category 5"
+        },
+        {
+          "index": 3,
+          "question": "What is user experience (UX) design?",
+          "answer": "User experience (UX) design is the process of enhancing user satisfaction by improving the usability, accessibility, and pleasure provided in the interaction between the user and the product.",
+          "category": "Category 5"
+        },
+        {
+          "index": 4,
+          "question": "What is user interface (UI) design?",
+          "answer": "User interface (UI) design is the process of designing the visual elements of a digital product, such as a website or application, to ensure a cohesive and intuitive user experience.",
+          "category": "Category 5"
+        },
+        {
+          "index": 5,
+          "question": "What is wireframing?",
+          "answer": "Wireframing is a technique used in web design to create a visual representation of a web page layout before any actual design work takes place.",
+          "category": "Category 5"
+        }
+      ]
+    }
+  ]
+}
