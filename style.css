@@ -9,7 +9,7 @@ body {
 
 .categories {
   padding-top: 3rem;
-  padding-bottom: 3rem;
+  padding-bottom: 7rem;
   display: flex;
   justify-content: center;
   gap: 3rem;
@@ -40,6 +40,9 @@ body {
 .categories button:hover {
   scale: 107%;
   transition: 0.3s ease-in-out;
+}
+.random-category {
+  background-color: rgb(239, 138, 189);
 }
 
 main {

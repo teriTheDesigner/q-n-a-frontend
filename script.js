@@ -49,7 +49,16 @@ function DisplayCard(category) {
     const front = card.querySelector(".front");
     const back = card.querySelector(".back");
 
-    const categoryQuestions = categorizedQuestions[category];
+    let selectedCategory;
+    if (category === "random") {
+      const categoryNames = Object.keys(categorizedQuestions);
+      selectedCategory =
+        categoryNames[Math.floor(Math.random() * categoryNames.length)];
+    } else {
+      selectedCategory = category;
+    }
+
+    const categoryQuestions = categorizedQuestions[selectedCategory];
     const randomIndex = Math.floor(Math.random() * categoryQuestions.length);
     const randomQuestion = categoryQuestions[randomIndex];
 
@@ -64,7 +73,7 @@ function DisplayCard(category) {
       "category5"
     );
 
-    card.classList.add("category" + category);
+    card.classList.add("category" + selectedCategory);
   }, 300);
 
   setTimeout(() => {
