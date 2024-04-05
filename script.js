@@ -14,7 +14,8 @@ function registerButtons() {
   const buttons = document.querySelectorAll(".categories button");
   buttons.forEach((button) => {
     button.addEventListener("click", function () {
-      zoomInCard();
+      const category = this.getAttribute("data-category");
+      zoomInCard(category);
       document.querySelector(".overlay").style.display = "none";
     });
   });
@@ -37,8 +38,28 @@ function flipCard() {
   const card = document.querySelector(".card");
   card.classList.toggle("flipped");
 }
-
-function zoomInCard() {
+function zoomInCard(category) {
   const container = document.querySelector(".container");
   container.classList.add("zoom-in");
+
+  const card = document.querySelector(".card");
+  const front = card.querySelector(".front");
+  const back = card.querySelector(".back");
+
+  const categoryQuestions = categorizedQuestions[category];
+  const randomIndex = Math.floor(Math.random() * categoryQuestions.length);
+  const randomQuestion = categoryQuestions[randomIndex];
+
+  front.innerText = randomQuestion.question;
+  back.innerText = randomQuestion.answer;
+
+  card.classList.remove(
+    "category1",
+    "category2",
+    "category3",
+    "category4",
+    "category5"
+  );
+
+  card.classList.add("category" + category);
 }

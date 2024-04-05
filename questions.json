@@ -1,7 +1,7 @@
 {
   "categories": [
     {
-      "name": "Category 1",
+      "name": "1",
       "questions": [
         {
           "index": 1,
@@ -36,7 +36,7 @@
       ]
     },
     {
-      "name": "Category 2",
+      "name": "2",
       "questions": [
         {
           "index": 1,
@@ -71,7 +71,7 @@
       ]
     },
     {
-      "name": "Category 3",
+      "name": "3",
       "questions": [
         {
           "index": 1,
@@ -106,7 +106,7 @@
       ]
     },
     {
-      "name": "Category 4",
+      "name": "4",
       "questions": [
         {
           "index": 1,
@@ -141,7 +141,7 @@
       ]
     },
     {
-      "name": "Category 5",
+      "name": "5",
       "questions": [
         {
           "index": 1,
