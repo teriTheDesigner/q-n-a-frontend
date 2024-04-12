@@ -6,8 +6,10 @@ let allQuestions = {};
 let displayedCards = [];
 let selectedCategory;
 let currentQuestion = {};
+let currentCardIndex = -1;
 
 async function start() {
+  currentCardIndex = -1;
   registerButtons();
   await getQuestions();
 }
@@ -125,6 +127,7 @@ function updateQuestion(category) {
   );
   card.classList.add("category" + category);
   currentQuestion = randomQuestion;
+  currentCardIndex = displayedCards.length - 1;
 }
 
 function disableAllCategoryButtons() {
@@ -159,59 +162,107 @@ function updateButtons() {
 
 function animateContainer() {
   const container = document.querySelector(".container");
+
   setTimeout(() => {
     container.classList.remove("zoom-out");
     container.classList.add("zoom-in");
   }, 300);
 }
 
+function displayPreviousQuestions() {
+  const cardContainer = document.querySelector(".card-container");
+  cardContainer.innerHTML = "";
+
+  displayedCards.forEach((question, index) => {
+    const categoryNumber = question.category.match(/\d+/)[0];
+    const card = document.createElement("div");
+    card.classList.add("card");
+    card.classList.add("category" + categoryNumber);
+    card.classList.remove("flipped");
+
+    const front = document.createElement("div");
+    front.classList.add("front");
+    front.innerText = question.question;
+
+    const back = document.createElement("div");
+    back.classList.add("back");
+    back.innerText = question.answer;
+
+    card.appendChild(front);
+    card.appendChild(back);
+
+    cardContainer.appendChild(card);
+  });
+}
+
 function displayPreviousQuestion() {
-  //   if (currentCardIndex === null || currentCardIndex <= 0) return;
-  //   currentCardIndex--;
-  //   const previousCard = displayedCards[currentCardIndex];
-  //   const category = previousCard.category;
-  //   const questionIndex = previousCard.questionIndex;
-  //   const container = document.querySelector(".container");
-  //   container.classList.remove("zoom-in");
-  //   container.classList.add("zoom-out");
-  //   setTimeout(() => {
-  //     const card = document.querySelector(".card");
-  //     const front = card.querySelector(".front");
-  //     const back = card.querySelector(".back");
-  //     const categoryQuestions = allQuestions[category];
-  //     const question = categoryQuestions[questionIndex];
-  //     front.innerText = question.question;
-  //     back.innerText = question.answer;
-  //     card.classList.remove(
-  //       "category1",
-  //       "category2",
-  //       "category3",
-  //       "category4",
-  //       "category5"
-  //     );
-  //     card.classList.add("category" + category);
-  //     // Update current card index
-  //     currentCardIndex--;
-  //     // Update visibility of previous button
-  //     if (currentCardIndex === 0) {
-  //       document.querySelector(".button.previous").classList.add("disabled");
-  //     } else {
-  //       document.querySelector(".button.previous").classList.remove("disabled");
-  //     }
-  //   }, 300);
-  //   setTimeout(() => {
-  //     container.classList.remove("zoom-out");
-  //     container.classList.add("zoom-in");
-  //   }, 300);
+  if (displayedCards.length === 0 || currentCardIndex === 0) {
+    return;
+  }
+
+  currentCardIndex--;
+
+  const previousQuestion = displayedCards[currentCardIndex];
+  const categoryNumber = previousQuestion.category.match(/\d+/)[0];
+
+  const card = document.querySelector(".card");
+  const front = card.querySelector(".front");
+  const back = card.querySelector(".back");
+  card.classList.remove("flipped");
+  setTimeout(() => {
+    front.innerText = previousQuestion.question;
+    back.innerText = previousQuestion.answer;
+
+    card.classList.remove(
+      "category1",
+      "category2",
+      "category3",
+      "category4",
+      "category5"
+    );
+    card.classList.add("category" + categoryNumber);
+  }, 300);
+  const container = document.querySelector(".container");
+  container.classList.remove("zoom-in");
+  container.classList.add("zoom-out");
+  animateContainer();
+
+  updateButtons();
 }
 
 function displayNextQuestion() {
-  //   if (
-  //     currentCardIndex === null ||
-  //     currentCardIndex >= displayedCards.length - 1
-  //   )
-  //     return;
-  //   currentCardIndex++;
-  //   const nextCard = displayedCards[currentCardIndex];
-  //   DisplayCard(nextCard.category);
+  if (
+    displayedCards.length === 0 ||
+    currentCardIndex === displayedCards.length - 1
+  ) {
+    return;
+  }
+
+  currentCardIndex++;
+
+  const nextQuestion = displayedCards[currentCardIndex];
+  const categoryNumber = nextQuestion.category.match(/\d+/)[0];
+
+  const card = document.querySelector(".card");
+  const front = card.querySelector(".front");
+  const back = card.querySelector(".back");
+  card.classList.remove("flipped");
+  setTimeout(() => {
+    front.innerText = nextQuestion.question;
+    back.innerText = nextQuestion.answer;
+
+    card.classList.remove(
+      "category1",
+      "category2",
+      "category3",
+      "category4",
+      "category5"
+    );
+    card.classList.add("category" + categoryNumber);
+  }, 300);
+  const container = document.querySelector(".container");
+  container.classList.remove("zoom-in");
+  container.classList.add("zoom-out");
+  animateContainer();
+  updateButtons();
 }
