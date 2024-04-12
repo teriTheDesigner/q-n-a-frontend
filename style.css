@@ -56,12 +56,11 @@ main {
   padding-left: 2rem;
   padding-right: 2rem;
   border: none;
-  background-color: rgba(255, 105, 180, 0.646);
+
   color: #293037;
   border-radius: 12px;
-  cursor: pointer;
 }
-.button:hover {
+.buttonActive:hover {
   scale: 105%;
   background-color: rgb(255, 105, 180);
   transition: 0.2s ease-in-out;
@@ -69,6 +68,16 @@ main {
 
 .hidden {
   display: none;
+}
+
+.buttonActive {
+  cursor: pointer;
+  background-color: rgb(252, 135, 194);
+}
+
+.disabled {
+  background-color: rgb(194, 194, 194);
+  pointer-events: none;
 }
 
 .display {
