@@ -85,16 +85,15 @@ main {
 }
 
 .overlay {
-  width: 500px;
-  height: 200px;
+  width: 700px;
+  height: 400px;
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
   border: 2px solid rgb(222, 222, 222);
-  margin: auto;
   font-size: 2rem;
   color: rgb(169, 169, 169);
-  padding: 6rem;
   border-radius: 20px;
   background-color: rgba(244, 244, 244, 0.8);
 }

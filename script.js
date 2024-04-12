@@ -27,6 +27,7 @@ function registerButtons() {
       selectedCategory = category;
       DisplayCard(category);
       document.querySelector(".overlay").style.display = "none";
+      document.querySelector(".container").classList.remove("hidden");
     });
   });
 }
