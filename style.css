@@ -56,9 +56,10 @@ main {
   padding-left: 2rem;
   padding-right: 2rem;
   border: none;
-  background-color: rgb(214, 214, 214);
+  background-color: rgb(252, 135, 194);
   color: #293037;
   border-radius: 12px;
+  cursor: pointer;
 }
 .buttonActive:hover {
   scale: 105%;

@@ -6,10 +6,9 @@ let allQuestions = {};
 let displayedCards = [];
 let selectedCategory;
 let currentQuestion = {};
-let currentCardIndex = -1;
+let currentCardIndex = 0;
 
 async function start() {
-  currentCardIndex = -1;
   registerButtons();
   await getQuestions();
 }
@@ -150,13 +149,21 @@ function disableRandomCategoryButton() {
 }
 
 function updateButtons() {
-  console.log(displayedCards, "displayedCards");
+  const previousButton = document.querySelector(".button.previous");
+  const nextButton = document.querySelector(".button.next");
 
-  if (displayedCards.length === 0) {
-    document.querySelector(".button.previous").classList.add("disabled");
+  if (currentCardIndex <= 0) {
+    console.log(currentCardIndex, "currentCardIndex = 0");
+    previousButton.classList.add("disabled");
   } else {
-    document.querySelector(".button.previous").classList.remove("disabled");
-    document.querySelector(".button.previous").classList.add("buttonActive");
+    console.log(currentCardIndex, "currentCardIndex else");
+    previousButton.classList.remove("disabled");
+  }
+
+  if (currentCardIndex >= displayedCards.length - 1) {
+    nextButton.classList.add("disabled");
+  } else {
+    nextButton.classList.remove("disabled");
   }
 }
 
@@ -208,7 +215,9 @@ function displayPreviousQuestion() {
   const card = document.querySelector(".card");
   const front = card.querySelector(".front");
   const back = card.querySelector(".back");
+
   card.classList.remove("flipped");
+
   setTimeout(() => {
     front.innerText = previousQuestion.question;
     back.innerText = previousQuestion.answer;
@@ -221,13 +230,14 @@ function displayPreviousQuestion() {
       "category5"
     );
     card.classList.add("category" + categoryNumber);
+
+    updateButtons();
   }, 300);
+
   const container = document.querySelector(".container");
   container.classList.remove("zoom-in");
   container.classList.add("zoom-out");
   animateContainer();
-
-  updateButtons();
 }
 
 function displayNextQuestion() {
@@ -246,7 +256,9 @@ function displayNextQuestion() {
   const card = document.querySelector(".card");
   const front = card.querySelector(".front");
   const back = card.querySelector(".back");
+
   card.classList.remove("flipped");
+
   setTimeout(() => {
     front.innerText = nextQuestion.question;
     back.innerText = nextQuestion.answer;
@@ -259,10 +271,12 @@ function displayNextQuestion() {
       "category5"
     );
     card.classList.add("category" + categoryNumber);
+
+    updateButtons();
   }, 300);
+
   const container = document.querySelector(".container");
   container.classList.remove("zoom-in");
   container.classList.add("zoom-out");
   animateContainer();
-  updateButtons();
 }
