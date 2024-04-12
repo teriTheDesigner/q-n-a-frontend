@@ -82,7 +82,7 @@ function handleRandomCategory() {
 
   selectedCategory =
     nonEmptyCategories[Math.floor(Math.random() * nonEmptyCategories.length)];
-  updateQuestionForCategory(selectedCategory);
+  updateQuestion(selectedCategory);
 }
 
 function handleSpecificCategory(category) {
@@ -94,10 +94,10 @@ function handleSpecificCategory(category) {
     return;
   }
 
-  updateQuestionForCategory(selectedCategory);
+  updateQuestion(selectedCategory);
 }
 
-function updateQuestionForCategory(category) {
+function updateQuestion(category) {
   const card = document.querySelector(".card");
   const front = card.querySelector(".front");
   const back = card.querySelector(".back");
