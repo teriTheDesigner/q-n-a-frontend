@@ -60,6 +60,9 @@ function DisplayCard(category) {
 }
 
 function updateCardContents(category) {
+  document.querySelectorAll(".card").forEach((card) => {
+    card.classList.remove("flipped");
+  });
   setTimeout(() => {
     if (category === "random") {
       handleRandomCategory();
