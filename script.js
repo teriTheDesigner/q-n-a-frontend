@@ -115,7 +115,11 @@ function updateQuestion(category) {
   displayedCards.push(randomQuestion);
 
   front.innerText = randomQuestion.question;
-  back.innerText = randomQuestion.answer;
+  if (randomQuestion.image) {
+    back.innerHTML = `${randomQuestion.answer}<img src="${randomQuestion.image}" alt="Answer Image">`;
+  } else {
+    back.innerText = randomQuestion.answer;
+  }
 
   card.classList.remove(
     "category1",
@@ -220,7 +224,11 @@ function displayPreviousQuestion() {
 
   setTimeout(() => {
     front.innerText = previousQuestion.question;
-    back.innerText = previousQuestion.answer;
+    if (previousQuestion.image) {
+      back.innerHTML = `${previousQuestion.answer}<img src="${previousQuestion.image}" alt="Answer Image">`;
+    } else {
+      back.innerText = previousQuestion.answer;
+    }
 
     card.classList.remove(
       "category1",
@@ -261,7 +269,11 @@ function displayNextQuestion() {
 
   setTimeout(() => {
     front.innerText = nextQuestion.question;
-    back.innerText = nextQuestion.answer;
+    if (nextQuestion.image) {
+      back.innerHTML = `${nextQuestion.answer}<img src="${nextQuestion.image}" alt="Answer Image">`;
+    } else {
+      back.innerText = nextQuestion.answer;
+    }
 
     card.classList.remove(
       "category1",

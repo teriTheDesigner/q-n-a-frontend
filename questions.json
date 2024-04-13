@@ -5,32 +5,160 @@
       "questions": [
         {
           "index": 1,
-          "question": "What is JavaScript?",
-          "answer": "JavaScript is a programming language that enables web pages to be interactive.JavaScript is a programming language that enables web pages to be interactive.JavaScript is a programming language that enables web pages to be interactive.JavaScript is a programming language that enables web pages to be interactive.JavaScript is a programming language that enables web pages to be interactive.JavaScript is a programming language that enables web pages to be interactive.JavaScript is a programming language that enables web pages to be interactive.JavaScript is a programming language that enables web pages to be interactive.JavaScript is a programming language that enables web pages to be interactive.JavaScript is a programming language that enables web pages to be interactive.JavaScript is a programming language that enables web pages to be interactive.JavaScript is a programming language that enables web pages to be interactive.JavaScript is a programming language that enables web pages to be interactive.JavaScript is a programming language that enables web pages to be interactive.",
+          "question": "What is the difference between the World Wide Web and the Internet?",
+          "answer": "The World Wide Web (WWW) is a system of interlinked hypertext documents accessed via the Internet. The Internet, on the other hand, is a global network of interconnected computers that communicate using standard protocols. In essence, the Internet provides the infrastructure for the WWW to exist and operate.",
           "category": "Category 1"
         },
         {
           "index": 2,
-          "question": "What is HTML?",
-          "answer": "HTML (Hypertext Markup Language) is the standard markup language for creating web pages and web applications.",
+          "question": "Explain the client-server architecture in the context of web development.",
+          "answer": "In the client-server architecture, clients are devices (such as computers or smartphones) that request services or resources from servers. Servers are computers that provide services or resources to clients. In web development, clients typically refer to web browsers, while servers host websites and serve web pages to clients upon request.",
           "category": "Category 1"
         },
         {
           "index": 3,
-          "question": "What is CSS?",
-          "answer": "CSS (Cascading Style Sheets) is a style sheet language used for describing the presentation of a document written in HTML.",
+          "question": "What is HTTP and how does it work?",
+          "answer": "HTTP (Hypertext Transfer Protocol) is the protocol used for communication between web browsers and web servers. It defines how messages are formatted and transmitted, allowing for the transfer of hypertext documents, such as HTML files. HTTP operates on a client-server model, where clients send requests for resources and servers respond with the requested content.",
           "category": "Category 1"
         },
         {
           "index": 4,
-          "question": "What is a variable in programming?",
-          "answer": "A variable is a container for storing data values, such as numbers or strings, that can change during the execution of a program.",
+          "question": "What are the primary HTTP request methods and their purposes?",
+          "answer": "The primary HTTP request methods are GET, POST, PUT, DELETE, and HEAD. GET is used to request data from a specified resource, POST is used to submit data to be processed to a specified resource, PUT is used to upload data to a specified resource, DELETE is used to delete a specified resource, and HEAD is used to request headers from a specified resource without transferring the entire content.",
+          "image": "/images/httprequests.png",
           "category": "Category 1"
         },
         {
           "index": 5,
-          "question": "What is a function in programming What is a function in programming?",
-          "answer": "A function is a block of reusable code that performs a specific task. It takes input, performs actions, and returns output.",
+          "question": "Describe the difference between HTTP and HTTPS.",
+          "answer": "HTTP (Hypertext Transfer Protocol) is the standard protocol used for transmitting data over the Internet. HTTPS (Hypertext Transfer Protocol Secure) is the secure version of HTTP, which uses encryption to ensure that data transmitted between the client and server is secure and cannot be intercepted or tampered with by third parties.",
+          "category": "Category 1"
+        },
+        {
+          "index": 6,
+          "question": "What is DNS and how does it facilitate web browsing?",
+          "answer": "DNS (Domain Name System) is a decentralized naming system for computers, services, or other resources connected to the Internet or a private network. It translates domain names (e.g., www.example.com) into IP addresses (e.g., 192.0.2.1), allowing users to access websites using easy-to-remember domain names instead of numeric IP addresses.",
+          "category": "Category 1"
+        },
+        {
+          "index": 7,
+          "question": "Explain the concept of a URL (Uniform Resource Locator).",
+          "answer": "A URL (Uniform Resource Locator) is a reference or address used to locate resources on the Internet. It consists of several components, including the protocol (e.g., HTTP, HTTPS), the domain name (e.g., www.example.com), the path to the resource (e.g., /index.html), and optional query parameters (e.g., ?id=123).",
+          "category": "Category 1"
+        },
+        {
+          "index": 8,
+          "question": "What are the main components of a URL?",
+          "answer": "The main components of a URL include the protocol (e.g., HTTP, HTTPS), the domain name (e.g., www.example.com), the port number (optional, default is 80 for HTTP and 443 for HTTPS), the path to the resource (e.g., /index.html), and optional query parameters (e.g., ?id=123).",
+          "image": "/images/urlparts.png",
+          "category": "Category 1"
+        },
+        {
+          "index": 9,
+          "question": "What is a web browser and how does it function?",
+          "answer": "A web browser is a software application used to access information on the World Wide Web. It retrieves and displays web pages, interprets HTML, CSS, and JavaScript, and enables users to interact with web content. Popular web browsers include Google Chrome, Mozilla Firefox, Microsoft Edge, and Safari.",
+          "category": "Category 1"
+        },
+        {
+          "index": 10,
+          "question": "What is a web server and how does it serve web pages?",
+          "answer": "A web server is a computer program or software application that serves requested web pages to clients over the Internet or a local network. It listens for incoming requests from clients, processes those requests, and sends back the requested web pages along with any associated resources, such as images, stylesheets, or scripts.",
+          "category": "Category 1"
+        },
+        {
+          "index": 11,
+          "question": "What are cookies and how are they used in web development?",
+          "answer": "Cookies are small pieces of data stored on the client-side by web browsers. They are used to store information about the user or their interactions with the website, such as login credentials, preferences, shopping cart items, or tracking identifiers. Cookies are sent with each HTTP request to the server and can be read, modified, or deleted by both the client and server. They are commonly used for session management, personalization, and tracking purposes in web development.",
+          "category": "Category 1"
+        },
+        {
+          "index": 12,
+          "question": "Explain the concept of web caching and its benefits.",
+          "answer": "Web caching is the process of storing copies of web resources such as HTML pages, images, stylesheets, or scripts temporarily on a local device or server. Caching reduces the need to re-fetch resources from the original server, improving the performance and efficiency of web browsing and reducing network traffic. Web caching can occur at different levels, including the browser cache, proxy servers, and content delivery networks (CDNs), and can be controlled using cache-control headers or meta tags in HTTP responses.",
+          "category": "Category 1"
+        },
+        {
+          "index": 13,
+          "question": "What are web standards and why are they important?",
+          "answer": "Web standards are guidelines, specifications, and best practices established by standardization organizations such as the World Wide Web Consortium (W3C) and the Internet Engineering Task Force (IETF) to ensure interoperability, compatibility, and accessibility of web technologies. Adhering to web standards helps web developers create websites that work consistently across different browsers, devices, and platforms, are accessible to people with disabilities, and are future-proofed against changes in technology or browser updates.",
+          "category": "Category 1"
+        },
+        {
+          "index": 14,
+          "question": "What is SEO (Search Engine Optimization) and why is it important for websites?",
+          "answer": "SEO (Search Engine Optimization) is the practice of optimizing websites to improve their visibility and ranking in search engine results pages (SERPs). It involves various techniques such as keyword research, on-page optimization, off-page optimization, technical optimization, content creation, link building, and performance optimization. SEO aims to increase organic traffic to websites, attract relevant visitors, and ultimately improve the online visibility, credibility, and profitability of businesses and organizations.",
+          "category": "Category 1"
+        },
+        {
+          "index": 15,
+          "question": "Explain the importance of website accessibility and some best practices for achieving it.",
+          "answer": "Website accessibility refers to the inclusive practice of designing and developing websites that can be accessed, understood, and used by people of all abilities, including those with disabilities. It involves following accessibility guidelines and standards such as the Web Content Accessibility Guidelines (WCAG), ensuring compatibility with assistive technologies such as screen readers, providing alternative text for images, captions for videos, and semantic HTML markup, and conducting usability testing with diverse user groups. Accessible websites benefit everyone by improving usability, user experience, search engine visibility, and compliance with legal requirements and industry standards.",
+          "category": "Category 1"
+        },
+        {
+          "index": 16,
+          "question": "Describe what happens when you type a URL into a browser and hit ENTER.",
+          "answer": "When you type a URL into a browser and hit ENTER, several steps occur behind the scenes to retrieve and display the requested web page. Firstly, the browser parses the URL to identify the protocol (HTTP or HTTPS), domain name (such as www.example.com), and optional path or query parameters. Next, it checks its local cache to see if the requested page has been visited recently and if a cached copy exists. If not, the browser sends a request to a DNS server to translate the domain name into an IP address, allowing it to locate the web server hosting the requested page. Once the IP address is obtained, the browser establishes a TCP connection with the web server and sends an HTTP request for the specified resource. The server processes the request, retrieves the requested web page and any associated resources (such as images, stylesheets, or scripts), and sends them back to the browser in an HTTP response. Finally, the browser receives the response, parses the HTML content, renders the web page, and displays it to the user, allowing them to interact with the page's content and functionality.",
+          "category": "Category 1"
+        },
+        {
+          "index": 17,
+          "question": "What is a TCP connection?",
+          "answer": "A TCP (Transmission Control Protocol) connection serves as a reliable communication link between devices on a network, ensuring data exchange with guaranteed delivery. When established, TCP connections facilitate the transfer of information by breaking data into manageable segments, each with its sequence number for ordered transmission. TCP employs error detection and correction mechanisms to maintain data integrity, ensuring that information reaches its destination accurately. Through flow control and congestion avoidance algorithms, TCP regulates data flow to prevent network congestion and optimize transmission rates. In summary, TCP connections play a vital role in enabling efficient and error-free communication between devices over the internet and other networks.",
+          "category": "Category 1"
+        },
+        {
+          "index": 18,
+          "question": "Describe the difference between HTTP and HTTPS.",
+          "answer": "HTTP (Hypertext Transfer Protocol) is the standard protocol used for transmitting data over the Internet. HTTPS (Hypertext Transfer Protocol Secure) is the secure version of HTTP, which uses encryption to ensure that data transmitted between the client and server is secure and cannot be intercepted or tampered with by third parties.",
+          "category": "Category 1"
+        },
+        {
+          "index": 19,
+          "question": "Describe the difference between HTTP and HTTPS.",
+          "answer": "HTTP (Hypertext Transfer Protocol) is the standard protocol used for transmitting data over the Internet. HTTPS (Hypertext Transfer Protocol Secure) is the secure version of HTTP, which uses encryption to ensure that data transmitted between the client and server is secure and cannot be intercepted or tampered with by third parties.",
+          "category": "Category 1"
+        },
+        {
+          "index": 20,
+          "question": "Describe the difference between HTTP and HTTPS.",
+          "answer": "HTTP (Hypertext Transfer Protocol) is the standard protocol used for transmitting data over the Internet. HTTPS (Hypertext Transfer Protocol Secure) is the secure version of HTTP, which uses encryption to ensure that data transmitted between the client and server is secure and cannot be intercepted or tampered with by third parties.",
+          "category": "Category 1"
+        },
+        {
+          "index": 21,
+          "question": "Describe the difference between HTTP and HTTPS.",
+          "answer": "HTTP (Hypertext Transfer Protocol) is the standard protocol used for transmitting data over the Internet. HTTPS (Hypertext Transfer Protocol Secure) is the secure version of HTTP, which uses encryption to ensure that data transmitted between the client and server is secure and cannot be intercepted or tampered with by third parties.",
+          "category": "Category 1"
+        },
+        {
+          "index": 22,
+          "question": "Describe the difference between HTTP and HTTPS.",
+          "answer": "HTTP (Hypertext Transfer Protocol) is the standard protocol used for transmitting data over the Internet. HTTPS (Hypertext Transfer Protocol Secure) is the secure version of HTTP, which uses encryption to ensure that data transmitted between the client and server is secure and cannot be intercepted or tampered with by third parties.",
+          "category": "Category 1"
+        },
+        {
+          "index": 23,
+          "question": "Describe the difference between HTTP and HTTPS.",
+          "answer": "HTTP (Hypertext Transfer Protocol) is the standard protocol used for transmitting data over the Internet. HTTPS (Hypertext Transfer Protocol Secure) is the secure version of HTTP, which uses encryption to ensure that data transmitted between the client and server is secure and cannot be intercepted or tampered with by third parties.",
+          "category": "Category 1"
+        },
+        {
+          "index": 24,
+          "question": "Describe the difference between HTTP and HTTPS.",
+          "answer": "HTTP (Hypertext Transfer Protocol) is the standard protocol used for transmitting data over the Internet. HTTPS (Hypertext Transfer Protocol Secure) is the secure version of HTTP, which uses encryption to ensure that data transmitted between the client and server is secure and cannot be intercepted or tampered with by third parties.",
+          "category": "Category 1"
+        },
+        {
+          "index": 25,
+          "question": "Describe the difference between HTTP and HTTPS.",
+          "answer": "HTTP (Hypertext Transfer Protocol) is the standard protocol used for transmitting data over the Internet. HTTPS (Hypertext Transfer Protocol Secure) is the secure version of HTTP, which uses encryption to ensure that data transmitted between the client and server is secure and cannot be intercepted or tampered with by third parties.",
+          "category": "Category 1"
+        },
+        {
+          "index": 26,
+          "question": "Describe the difference between HTTP and HTTPS.",
+          "answer": "HTTP (Hypertext Transfer Protocol) is the standard protocol used for transmitting data over the Internet. HTTPS (Hypertext Transfer Protocol Secure) is the secure version of HTTP, which uses encryption to ensure that data transmitted between the client and server is secure and cannot be intercepted or tampered with by third parties.",
           "category": "Category 1"
         }
       ]
@@ -40,36 +168,64 @@
       "questions": [
         {
           "index": 1,
-          "question": "What is a loop?",
-          "answer": "A loop is a programming construct that repeats a block of code until a specified condition is met.",
+          "question": "What is HTML and what is its role in web development?",
+          "answer": "HTML (Hypertext Markup Language) is the standard markup language used to create and structure web pages. It consists of a series of elements or tags that define the structure and content of a web page. HTML elements can include headings, paragraphs, links, images, lists, tables, forms, and more.",
           "category": "Category 2"
         },
         {
           "index": 2,
-          "question": "What is an array?",
-          "answer": "An array is a data structure that stores a collection of elements, each identified by an index.",
+          "question": "What is CSS and how is it used in styling web pages?",
+          "answer": "CSS (Cascading Style Sheets) is a style sheet language used for describing the presentation of a document written in HTML. It enables web developers to control the layout, formatting, and appearance of web pages by applying styles to HTML elements. CSS can be used to set colors, fonts, margins, padding, borders, and more.",
           "category": "Category 2"
         },
         {
           "index": 3,
-          "question": "What is an object?",
-          "answer": "An object is a collection of key-value pairs, where each key is a unique identifier for a value.",
+          "question": "Explain the concept of responsive web design.",
+          "answer": "Responsive web design is an approach to web design that ensures web pages render well on a variety of devices and screen sizes. It involves using flexible layouts, fluid grids, and media queries to adapt the layout and design of a website based on the size and capabilities of the device being used to view it.",
           "category": "Category 2"
         },
         {
           "index": 4,
-          "question": "What is a method?",
-          "answer": "A method is a function that is associated with an object and can be called to perform actions or calculations on that object.",
+          "question": "What is the box model in CSS and how does it work?",
+          "answer": "The box model in CSS describes how elements are rendered on a web page by defining the content area, padding, border, and margin of each element. It consists of four components: content (the actual content of the element), padding (the space between the content and the border), border (the border around the padding), and margin (the space outside the border).",
+          "image": "/images/boxmodel.png",
           "category": "Category 2"
         },
         {
           "index": 5,
-          "question": "What is a conditional statement?",
-          "answer": "A conditional statement is a programming construct that executes different code depending on whether a specified condition is true or false.",
+          "question": "Describe the difference between inline, block, and inline-block elements in HTML/CSS.",
+          "answer": "In HTML and CSS, inline elements are displayed inline, meaning they flow along with the surrounding content and do not start on a new line. Block elements, on the other hand, start on a new line and take up the full width available. Inline-block elements are displayed inline but behave like block elements in terms of layout and sizing.",
+          "category": "Category 2"
+        },
+        {
+          "index": 6,
+          "question": "What are semantic HTML elements and why are they important?",
+          "answer": "Semantic HTML elements are HTML elements that convey meaning about the content they contain. Examples include <header>, <footer>, <nav>, <article>, <section>, and <aside>. Using semantic elements improves accessibility, search engine optimization, and maintainability of web pages by providing clearer structure and context to both humans and machines.",
+          "category": "Category 2"
+        },
+        {
+          "index": 7,
+          "question": "Explain the purpose of the meta tag in HTML.",
+          "answer": "The meta tag in HTML is used to provide metadata about the HTML document. Metadata includes information such as the character encoding, viewport settings, author, description, keywords, and more. Meta tags are placed within the <head> section of an HTML document and are not displayed on the web page itself but are used by browsers, search engines, and other web services.",
+          "image": "/images/meta.png",
+          "category": "Category 2"
+        },
+        {
+          "index": 8,
+          "question": "What is the difference between relative and absolute positioning in CSS?",
+          "answer": "Relative positioning in CSS positions an element relative to its normal position in the document flow, without changing the layout of surrounding elements. Absolute positioning, on the other hand, positions an element relative to its nearest positioned ancestor or the initial containing block, completely removing it from the document flow. Relative positioning can be useful for fine-tuning the position of elements within a layout without disrupting the flow of other elements.",
+          "category": "Category 2"
+        },
+        {
+          "index": 9,
+          "question": "Describe the purpose of the <DOCTYPE> declaration in HTML.",
+          "answer": "The declaration specifies the document type and version of the HTML standard used in an HTML document. It is placed at the beginning of the document before the <html> tag and informs web browsers about the rules and syntax to use when parsing and rendering the document. The correct <!DOCTYPE> declaration ensures that web pages are displayed consistently across different browsers and devices and helps avoid compatibility issues and quirks mode rendering.",
+          "image": "/images/doctype.png",
           "category": "Category 2"
         }
       ]
     },
+
     {
       "name": "3",
       "questions": [
