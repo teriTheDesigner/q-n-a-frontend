@@ -252,52 +252,45 @@
           "category": "Category 3"
         },
         {
-          "index": 8,
-          "question": "What is hoisting in JavaScript?",
-          "answer": "Hoisting in JavaScript is a behavior where variable and function declarations are moved to the top of their containing scope during the compilation phase, before the code is executed. This means that regardless of where variables and functions are declared within their scope, they are accessible and can be used before they are formally declared in the code. <br><br>However, only the declarations are hoisted, not the initializations. This can sometimes lead to unexpected behavior if not understood properly, as it may seem that variables are used before they are declared, although it's actually due to hoisting. <br><br>In this example, even though x is logged before it's declared and initialized, it doesn't cause an error. This is because the declaration var x; is hoisted to the top of the scope, making x accessible throughout the function, albeit with an initial value of undefined. <br><br>In this case, trying to access y before its declaration results in a ReferenceError. This is because let variables are not initialized until their actual declaration, unlike var variables which are initialized with undefined during hoisting.",
-          "image": "/images/hoisting.png",
+          "index": 11,
+          "question": "What is a closure in JavaScript?",
+          "answer": "A closure is a feature in JavaScript where an inner function has access to the outer function's variables, even after the outer function has finished executing. This allows the inner function to remember and access the variables in its lexical scope, even when called from a different scope. Closures are commonly used in JavaScript to create private variables, encapsulate functionality, and maintain state.",
           "category": "Category 3"
         },
         {
-          "index": 8,
-          "question": "What is hoisting in JavaScript?",
-          "answer": "Hoisting in JavaScript is a behavior where variable and function declarations are moved to the top of their containing scope during the compilation phase, before the code is executed. This means that regardless of where variables and functions are declared within their scope, they are accessible and can be used before they are formally declared in the code. <br><br>However, only the declarations are hoisted, not the initializations. This can sometimes lead to unexpected behavior if not understood properly, as it may seem that variables are used before they are declared, although it's actually due to hoisting. <br><br>In this example, even though x is logged before it's declared and initialized, it doesn't cause an error. This is because the declaration var x; is hoisted to the top of the scope, making x accessible throughout the function, albeit with an initial value of undefined. <br><br>In this case, trying to access y before its declaration results in a ReferenceError. This is because let variables are not initialized until their actual declaration, unlike var variables which are initialized with undefined during hoisting.",
-          "image": "/images/hoisting.png",
+          "index": 12,
+          "question": "Explain the concept of asynchronous programming in JavaScript.",
+          "answer": "Asynchronous programming in JavaScript allows code to execute non-blocking operations, meaning that other code can continue to run while waiting for the asynchronous operation to complete. This is typically achieved using callbacks, promises, or async/await syntax. Asynchronous operations are commonly used for tasks such as fetching data from a server, reading files, or performing animations, where the result may not be immediately available.",
           "category": "Category 3"
         },
         {
-          "index": 8,
-          "question": "What is hoisting in JavaScript?",
-          "answer": "Hoisting in JavaScript is a behavior where variable and function declarations are moved to the top of their containing scope during the compilation phase, before the code is executed. This means that regardless of where variables and functions are declared within their scope, they are accessible and can be used before they are formally declared in the code. <br><br>However, only the declarations are hoisted, not the initializations. This can sometimes lead to unexpected behavior if not understood properly, as it may seem that variables are used before they are declared, although it's actually due to hoisting. <br><br>In this example, even though x is logged before it's declared and initialized, it doesn't cause an error. This is because the declaration var x; is hoisted to the top of the scope, making x accessible throughout the function, albeit with an initial value of undefined. <br><br>In this case, trying to access y before its declaration results in a ReferenceError. This is because let variables are not initialized until their actual declaration, unlike var variables which are initialized with undefined during hoisting.",
-          "image": "/images/hoisting.png",
+          "index": 13,
+          "question": "What is the event loop in JavaScript?",
+          "answer": "The event loop is a mechanism in JavaScript that allows asynchronous tasks (such as callbacks, promises, and events) to be executed in a non-blocking manner. It continuously checks the call stack for tasks to execute, as well as the message queue for pending events. When the call stack is empty, the event loop takes the next task from the message queue and pushes it onto the call stack for execution, ensuring that the program remains responsive and can handle asynchronous operations efficiently.",
           "category": "Category 3"
         },
         {
-          "index": 8,
-          "question": "What is hoisting in JavaScript?",
-          "answer": "Hoisting in JavaScript is a behavior where variable and function declarations are moved to the top of their containing scope during the compilation phase, before the code is executed. This means that regardless of where variables and functions are declared within their scope, they are accessible and can be used before they are formally declared in the code. <br><br>However, only the declarations are hoisted, not the initializations. This can sometimes lead to unexpected behavior if not understood properly, as it may seem that variables are used before they are declared, although it's actually due to hoisting. <br><br>In this example, even though x is logged before it's declared and initialized, it doesn't cause an error. This is because the declaration var x; is hoisted to the top of the scope, making x accessible throughout the function, albeit with an initial value of undefined. <br><br>In this case, trying to access y before its declaration results in a ReferenceError. This is because let variables are not initialized until their actual declaration, unlike var variables which are initialized with undefined during hoisting.",
-          "image": "/images/hoisting.png",
+          "index": 14,
+          "question": "What are higher-order functions in JavaScript?",
+          "answer": "Higher-order functions are functions that can accept other functions as arguments and/or return functions as results. They enable powerful and flexible programming patterns, such as functional programming and callbacks. Examples of higher-order functions in JavaScript include map, filter, reduce, and forEach, which operate on arrays and accept callback functions to define custom behavior.",
           "category": "Category 3"
         },
         {
-          "index": 8,
-          "question": "What is hoisting in JavaScript?",
-          "answer": "Hoisting in JavaScript is a behavior where variable and function declarations are moved to the top of their containing scope during the compilation phase, before the code is executed. This means that regardless of where variables and functions are declared within their scope, they are accessible and can be used before they are formally declared in the code. <br><br>However, only the declarations are hoisted, not the initializations. This can sometimes lead to unexpected behavior if not understood properly, as it may seem that variables are used before they are declared, although it's actually due to hoisting. <br><br>In this example, even though x is logged before it's declared and initialized, it doesn't cause an error. This is because the declaration var x; is hoisted to the top of the scope, making x accessible throughout the function, albeit with an initial value of undefined. <br><br>In this case, trying to access y before its declaration results in a ReferenceError. This is because let variables are not initialized until their actual declaration, unlike var variables which are initialized with undefined during hoisting.",
-          "image": "/images/hoisting.png",
+          "index": 15,
+          "question": "Explain the concept of scope in JavaScript.",
+          "answer": "Scope refers to the visibility and accessibility of variables in JavaScript. Variables can have global scope, function scope, or block scope, depending on where they are declared. Global variables are accessible throughout the entire program, while function-scoped variables are only accessible within the function where they are declared. Block-scoped variables, introduced in ES6 with let and const, are confined to the block where they are declared, such as loops or conditionals.",
           "category": "Category 3"
         },
         {
-          "index": 8,
-          "question": "What is hoisting in JavaScript?",
-          "answer": "Hoisting in JavaScript is a behavior where variable and function declarations are moved to the top of their containing scope during the compilation phase, before the code is executed. This means that regardless of where variables and functions are declared within their scope, they are accessible and can be used before they are formally declared in the code. <br><br>However, only the declarations are hoisted, not the initializations. This can sometimes lead to unexpected behavior if not understood properly, as it may seem that variables are used before they are declared, although it's actually due to hoisting. <br><br>In this example, even though x is logged before it's declared and initialized, it doesn't cause an error. This is because the declaration var x; is hoisted to the top of the scope, making x accessible throughout the function, albeit with an initial value of undefined. <br><br>In this case, trying to access y before its declaration results in a ReferenceError. This is because let variables are not initialized until their actual declaration, unlike var variables which are initialized with undefined during hoisting.",
-          "image": "/images/hoisting.png",
+          "index": 16,
+          "question": "What is the difference between synchronous and asynchronous code execution in JavaScript?",
+          "answer": "Synchronous code execution occurs sequentially, where each statement is executed one after the other, blocking the execution of subsequent statements until the current one is completed. Asynchronous code execution, on the other hand, allows tasks to be executed concurrently, without waiting for previous tasks to complete. Asynchronous operations are often used for tasks that involve I/O operations, such as fetching data from a server or reading files, to avoid blocking the main thread and improve performance.",
           "category": "Category 3"
         },
         {
-          "index": 8,
-          "question": "What is hoisting in JavaScript?",
-          "answer": "Hoisting in JavaScript is a behavior where variable and function declarations are moved to the top of their containing scope during the compilation phase, before the code is executed. This means that regardless of where variables and functions are declared within their scope, they are accessible and can be used before they are formally declared in the code. <br><br>However, only the declarations are hoisted, not the initializations. This can sometimes lead to unexpected behavior if not understood properly, as it may seem that variables are used before they are declared, although it's actually due to hoisting. <br><br>In this example, even though x is logged before it's declared and initialized, it doesn't cause an error. This is because the declaration var x; is hoisted to the top of the scope, making x accessible throughout the function, albeit with an initial value of undefined. <br><br>In this case, trying to access y before its declaration results in a ReferenceError. This is because let variables are not initialized until their actual declaration, unlike var variables which are initialized with undefined during hoisting.",
-          "image": "/images/hoisting.png",
+          "index": 17,
+          "question": "How do you handle errors in JavaScript?",
+          "answer": "Error handling in JavaScript involves using try-catch blocks to catch and handle exceptions that may occur during the execution of code. The try block contains the code that may throw an exception, while the catch block handles the exception if one occurs, allowing the program to gracefully recover from errors. Additionally, JavaScript provides built-in error objects such as Error, SyntaxError, TypeError, and ReferenceError to represent different types of errors, which can be used to provide more detailed information about the error to the developer or user.",
           "category": "Category 3"
         },
         {
@@ -370,32 +363,134 @@
       "questions": [
         {
           "index": 1,
-          "question": "What is responsive design?",
-          "answer": "Responsive design is an approach to web design that makes web pages render well on a variety of devices and window or screen sizes.",
+          "question": "What is Git?",
+          "answer": "Git is a distributed version control system used for tracking changes in source code during software development. It allows multiple developers to collaborate on projects by providing features such as branching, merging, and version history tracking.",
           "category": "Category 5"
         },
         {
           "index": 2,
-          "question": "What is mobile-first design?",
-          "answer": "Mobile-first design is a design strategy that prioritizes designing for mobile devices before designing for desktop or other devices.",
+          "question": "What is GitHub?",
+          "answer": "GitHub is a web-based hosting service for version control using Git. It provides a platform for developers to store, manage, and share their Git repositories. GitHub offers collaboration features such as issue tracking, pull requests, and project management tools.",
           "category": "Category 5"
         },
         {
           "index": 3,
-          "question": "What is user experience (UX) design?",
-          "answer": "User experience (UX) design is the process of enhancing user satisfaction by improving the usability, accessibility, and pleasure provided in the interaction between the user and the product.",
+          "question": "What is a repository in Git?",
+          "answer": "A repository, or repo, in Git is a collection of files and folders along with the version history of those files. It serves as a central storage location for a project's source code and allows developers to track changes, collaborate, and maintain different versions of the codebase.",
           "category": "Category 5"
         },
         {
           "index": 4,
-          "question": "What is user interface (UI) design?",
-          "answer": "User interface (UI) design is the process of designing the visual elements of a digital product, such as a website or application, to ensure a cohesive and intuitive user experience.",
+          "question": "What is the 'git clone' command used for?",
+          "answer": "The 'git clone' command is used to create a copy, or clone, of an existing Git repository. It allows users to download the entire repository, including all files, branches, and commit history, to their local machine. Cloning a repository is often done when starting work on a project or when collaborating with others.",
           "category": "Category 5"
         },
         {
           "index": 5,
-          "question": "What is wireframing?",
-          "answer": "Wireframing is a technique used in web design to create a visual representation of a web page layout before any actual design work takes place.",
+          "question": "Explain the purpose of the 'git status' command.",
+          "answer": "The 'git status' command is used to display the current state of the Git repository. It shows information such as which files have been modified, which files are staged for commit, and which branch the repository is currently on. This command is helpful for tracking changes and determining the next steps in the development workflow.",
+          "category": "Category 5"
+        },
+        {
+          "index": 6,
+          "question": "What does the 'git add' command do?",
+          "answer": "The 'git add' command is used to stage changes for commit in the Git repository. It adds modified or new files to the staging area, allowing them to be included in the next commit. The 'git add' command is typically followed by the name of the file or directory to be staged, or it can be used with the '.' wildcard to stage all changes.",
+          "category": "Category 5"
+        },
+        {
+          "index": 7,
+          "question": "What is the purpose of the 'git commit' command?",
+          "answer": "The 'git commit' command is used to record changes to the Git repository. It creates a new commit containing the staged changes along with a commit message that describes the changes made. Commits are snapshots of the repository's state at a specific point in time, allowing developers to track the history of changes and revert to previous versions if needed.",
+          "category": "Category 5"
+        },
+        {
+          "index": 8,
+          "question": "Explain the difference between 'git pull' and 'git push' commands.",
+          "answer": "The 'git pull' command is used to fetch and merge changes from a remote repository into the current branch. It downloads new commits from the remote repository and incorporates them into the local branch. On the other hand, the 'git push' command is used to upload local commits to a remote repository. It sends the local branch's commits to the remote repository, updating the branch's history on the remote server.",
+          "category": "Category 5"
+        },
+        {
+          "index": 9,
+          "question": "What does the 'git branch' command do?",
+          "answer": "The 'git branch' command is used to list, create, or delete branches in the Git repository. When used without any arguments, it displays a list of existing branches and highlights the current branch. By providing a branch name, it creates a new branch with that name. Additionally, the 'git branch' command can be used with the '-d' flag to delete a specified branch.",
+          "category": "Category 5"
+        },
+        {
+          "index": 10,
+          "question": "Explain the purpose of the 'git checkout' command.",
+          "answer": "The 'git checkout' command is used to switch between different branches or to restore files from a specific commit. When followed by a branch name, it updates the working directory to reflect the state of the specified branch, allowing developers to work on different features or fixes. Additionally, the 'git checkout' command can be used with a file or commit hash to restore the file's contents to a previous state.",
+          "category": "Category 5"
+        },
+        {
+          "index": 11,
+          "question": "What is npm?",
+          "answer": "npm, or Node Package Manager, is a package manager for JavaScript. It allows developers to install, manage, and share packages of code, commonly used in Node.js projects. npm facilitates dependency management by automatically installing the necessary packages and their dependencies based on a project's package.json file.",
+          "category": "Category 5"
+        },
+        {
+          "index": 12,
+          "question": "What is a package.json file?",
+          "answer": "A package.json file is a metadata file used in Node.js projects to specify project dependencies, scripts, and other configuration details. It contains information such as the project's name, version, description, author, and a list of dependencies required for the project to run. The package.json file serves as the entry point for npm to manage project dependencies and execute scripts defined in the file.",
+          "category": "Category 5"
+        },
+        {
+          "index": 13,
+          "question": "How do you install a package using npm?",
+          "answer": "To install a package using npm, you can use the 'npm install' command followed by the name of the package. For example, 'npm install lodash' installs the lodash package. Additionally, you can specify the package version or tag to install a specific version, or use the '--save' or '--save-dev' flag to save the package as a dependency in the project's package.json file.",
+          "category": "Category 5"
+        },
+        {
+          "index": 14,
+          "question": "What is React?",
+          "answer": "React is a JavaScript library for building user interfaces, developed and maintained by Facebook. It allows developers to create reusable UI components that compose a web application's user interface. React uses a declarative approach to describe how the UI should look and automatically updates the UI when the underlying data changes, making it efficient and scalable for building complex applications.",
+          "category": "Category 5"
+        },
+        {
+          "index": 15,
+          "question": "Explain the concept of JSX in React.",
+          "answer": "JSX, or JavaScript XML, is a syntax extension for JavaScript used in React to describe the structure of user interfaces. It allows developers to write HTML-like code directly within JavaScript files, making it easier to visualize and build UI components. JSX is transpiled into regular JavaScript function calls by tools like Babel before being interpreted by the browser.",
+          "category": "Category 5"
+        },
+        {
+          "index": 16,
+          "question": "What is a pull request in GitHub?",
+          "answer": "A pull request in GitHub is a way to propose changes to a repository hosted on GitHub. It allows developers to submit their changes for review and collaboration before merging them into the main branch. Pull requests provide a discussion platform where reviewers can comment on the proposed changes, suggest improvements, and ultimately approve or reject the changes.",
+          "category": "Category 5"
+        },
+        {
+          "index": 17,
+          "question": "How do you merge branches in Git?",
+          "answer": "To merge branches in Git, you can use the 'git merge' command followed by the name of the branch to be merged into the current branch. For example, 'git merge feature-branch' merges the 'feature-branch' into the current branch. Git automatically combines the changes from both branches and creates a new merge commit if necessary.",
+          "category": "Category 5"
+        },
+        {
+          "index": 18,
+          "question": "What is a package-lock.json file?",
+          "answer": "The package-lock.json file is a file generated by npm that keeps track of the exact version of each package and its dependencies installed in a project. It ensures that the same versions of packages are installed on all machines and in continuous integration environments, preventing unexpected version conflicts. The package-lock.json file is automatically generated and updated by npm when installing or updating packages.",
+          "category": "Category 5"
+        },
+        {
+          "index": 19,
+          "question": "How do you install global npm packages?",
+          "answer": "To install npm packages globally, you can use the '-g' or '--global' flag with the 'npm install' command followed by the package name. For example, 'npm install -g nodemon' installs the nodemon package globally. Global packages are installed in a system-wide directory and can be accessed from any directory or project on the machine.",
+          "category": "Category 5"
+        },
+        {
+          "index": 20,
+          "question": "What is React Router?",
+          "answer": "React Router is a routing library for React applications that allows developers to manage navigation and URL routing in single-page applications. It provides components like BrowserRouter, Route, Switch, and Link to define and handle different routes in the application. React Router enables client-side routing by synchronizing the UI with the URL without causing a full page refresh.",
+          "category": "Category 5"
+        },
+        {
+          "index": 21,
+          "question": "What are props in React?",
+          "answer": "Props, short for properties, are a way to pass data from parent components to child components in React. They are immutable and are used to customize and configure child components dynamically. Props are specified as attributes on JSX elements when rendering components and are accessible within the component as an object.",
+          "category": "Category 5"
+        },
+        {
+          "index": 22,
+          "question": "What is the purpose of state in React?",
+          "answer": "State is a built-in feature in React that allows components to manage and maintain their own data. It represents the mutable data that can change over time, such as user input, component state, or API responses. State is managed internally by React components and can be updated using the 'setState' method, triggering a re-render of the component and its children.",
           "category": "Category 5"
         }
       ]
