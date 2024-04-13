@@ -112,54 +112,6 @@
           "question": "Describe the difference between HTTP and HTTPS.",
           "answer": "HTTP (Hypertext Transfer Protocol) is the standard protocol used for transmitting data over the Internet. HTTPS (Hypertext Transfer Protocol Secure) is the secure version of HTTP, which uses encryption to ensure that data transmitted between the client and server is secure and cannot be intercepted or tampered with by third parties.",
           "category": "Category 1"
-        },
-        {
-          "index": 19,
-          "question": "Describe the difference between HTTP and HTTPS.",
-          "answer": "HTTP (Hypertext Transfer Protocol) is the standard protocol used for transmitting data over the Internet. HTTPS (Hypertext Transfer Protocol Secure) is the secure version of HTTP, which uses encryption to ensure that data transmitted between the client and server is secure and cannot be intercepted or tampered with by third parties.",
-          "category": "Category 1"
-        },
-        {
-          "index": 20,
-          "question": "Describe the difference between HTTP and HTTPS.",
-          "answer": "HTTP (Hypertext Transfer Protocol) is the standard protocol used for transmitting data over the Internet. HTTPS (Hypertext Transfer Protocol Secure) is the secure version of HTTP, which uses encryption to ensure that data transmitted between the client and server is secure and cannot be intercepted or tampered with by third parties.",
-          "category": "Category 1"
-        },
-        {
-          "index": 21,
-          "question": "Describe the difference between HTTP and HTTPS.",
-          "answer": "HTTP (Hypertext Transfer Protocol) is the standard protocol used for transmitting data over the Internet. HTTPS (Hypertext Transfer Protocol Secure) is the secure version of HTTP, which uses encryption to ensure that data transmitted between the client and server is secure and cannot be intercepted or tampered with by third parties.",
-          "category": "Category 1"
-        },
-        {
-          "index": 22,
-          "question": "Describe the difference between HTTP and HTTPS.",
-          "answer": "HTTP (Hypertext Transfer Protocol) is the standard protocol used for transmitting data over the Internet. HTTPS (Hypertext Transfer Protocol Secure) is the secure version of HTTP, which uses encryption to ensure that data transmitted between the client and server is secure and cannot be intercepted or tampered with by third parties.",
-          "category": "Category 1"
-        },
-        {
-          "index": 23,
-          "question": "Describe the difference between HTTP and HTTPS.",
-          "answer": "HTTP (Hypertext Transfer Protocol) is the standard protocol used for transmitting data over the Internet. HTTPS (Hypertext Transfer Protocol Secure) is the secure version of HTTP, which uses encryption to ensure that data transmitted between the client and server is secure and cannot be intercepted or tampered with by third parties.",
-          "category": "Category 1"
-        },
-        {
-          "index": 24,
-          "question": "Describe the difference between HTTP and HTTPS.",
-          "answer": "HTTP (Hypertext Transfer Protocol) is the standard protocol used for transmitting data over the Internet. HTTPS (Hypertext Transfer Protocol Secure) is the secure version of HTTP, which uses encryption to ensure that data transmitted between the client and server is secure and cannot be intercepted or tampered with by third parties.",
-          "category": "Category 1"
-        },
-        {
-          "index": 25,
-          "question": "Describe the difference between HTTP and HTTPS.",
-          "answer": "HTTP (Hypertext Transfer Protocol) is the standard protocol used for transmitting data over the Internet. HTTPS (Hypertext Transfer Protocol Secure) is the secure version of HTTP, which uses encryption to ensure that data transmitted between the client and server is secure and cannot be intercepted or tampered with by third parties.",
-          "category": "Category 1"
-        },
-        {
-          "index": 26,
-          "question": "Describe the difference between HTTP and HTTPS.",
-          "answer": "HTTP (Hypertext Transfer Protocol) is the standard protocol used for transmitting data over the Internet. HTTPS (Hypertext Transfer Protocol Secure) is the secure version of HTTP, which uses encryption to ensure that data transmitted between the client and server is secure and cannot be intercepted or tampered with by third parties.",
-          "category": "Category 1"
         }
       ]
     },
@@ -222,6 +174,13 @@
           "answer": "The declaration specifies the document type and version of the HTML standard used in an HTML document. It is placed at the beginning of the document before the <html> tag and informs web browsers about the rules and syntax to use when parsing and rendering the document. The correct <!DOCTYPE> declaration ensures that web pages are displayed consistently across different browsers and devices and helps avoid compatibility issues and quirks mode rendering.",
           "image": "/images/doctype.png",
           "category": "Category 2"
+        },
+        {
+          "index": 10,
+          "question": "What are 3 ways to center a div?",
+          "answer": "Of course there are many different ways, here are some examples:",
+          "image": "/images/centerdiv.png",
+          "category": "Category 2"
         }
       ]
     },
@@ -231,32 +190,142 @@
       "questions": [
         {
           "index": 1,
-          "question": "What is a database?",
-          "answer": "A database is a structured collection of data stored electronically.",
+          "question": "Describe the role of JavaScript in web development.",
+          "answer": "JavaScript is a high-level, interpreted programming language primarily used to add interactivity and dynamic behavior to web pages. It enables web developers to create interactive elements, handle user input, manipulate the DOM, make asynchronous requests to servers, and much more. JavaScript is widely used in web development, both on the client-side (in web browsers) and server-side (with Node.js).",
           "category": "Category 3"
         },
         {
           "index": 2,
-          "question": "What is SQL?",
-          "answer": "SQL (Structured Query Language) is a programming language used for managing and manipulating databases.",
+          "question": "What are variables in JavaScript?",
+          "answer": "In JavaScript, variables are containers for storing data values. They are used to hold various types of data, such as numbers, strings, objects, and more. Variables are declared using the var, let, or const keywords, followed by a unique name. These names, also known as identifiers, can consist of letters, digits, underscores, and dollar signs, but cannot start with a digit. Variables can be assigned values using the assignment operator (=). They provide flexibility and efficiency in managing and manipulating data within JavaScript code, making it easier to create dynamic and interactive applications.",
           "category": "Category 3"
         },
         {
           "index": 3,
-          "question": "What is a primary key?",
-          "answer": "A primary key is a unique identifier for a record in a database table.",
+          "question": "Explain the difference between == and === in JavaScript.",
+          "answer": "In JavaScript, the == operator checks if two values are equal, even if they're different types. It converts them to the same type before comparing. The === operator, however, checks for strict equality. It compares both the value and the type of the values, returning true only if they're exactly the same.",
+          "image": "/images/equal.png",
           "category": "Category 3"
         },
         {
           "index": 4,
-          "question": "What is normalization?",
-          "answer": "Normalization is the process of organizing data in a database to reduce redundancy and improve data integrity.",
+          "question": "What is event handling in JavaScript?",
+          "answer": "Event handling in JavaScript involves responding to user interactions or system events, such as mouse clicks, keyboard input, form submissions, or page load. Event listeners are used to attach event handlers to DOM elements, specifying the type of event to listen for and the function to execute when the event occurs. Event handling enables web developers to create interactive and responsive web applications.",
           "category": "Category 3"
         },
         {
           "index": 5,
-          "question": "What is a join?",
-          "answer": "A join is a SQL operation that combines rows from two or more tables based on a related column between them.",
+          "question": "Describe the concept of DOM (Document Object Model) in web development.",
+          "answer": "The Document Object Model (DOM) is a programming interface for web documents. It represents the structure of HTML and XML documents as a tree of objects, where each node corresponds to an element, attribute, or piece of text in the document. The DOM provides methods and properties for accessing, manipulating, and updating the content, structure, and style of web documents dynamically using JavaScript or other scripting languages.",
+          "category": "Category 3"
+        },
+        {
+          "index": 6,
+          "question": "How does JavaScript interact with the DOM?",
+          "answer": "JavaScript interacts with the DOM by accessing and manipulating DOM elements and their properties and methods. It can select elements using methods such as getElementById(), getElementsByClassName(), or querySelector(), and then modify their content, attributes, styles, or event handlers using properties and methods such as innerHTML, className, style, or addEventListener(). JavaScript can also create new elements, remove existing elements, or traverse the DOM tree to navigate between elements and their ancestors, siblings, or children.",
+          "category": "Category 3"
+        },
+        {
+          "index": 7,
+          "question": "What are the differences between `var` `let` and `const`?",
+          "answer": "Variables in JavaScript, like var, let, and const, vary in scope, hoisting, and reassignment. var is function-scoped and hoisted to the top of its function or global scope, while let and const are block-scoped. let and const allow reassignment, but const values can't be changed after initialization, though properties of objects and arrays declared with const can be modified. Overall, let and const offer better scoping and prevent common bugs, with const being useful for constants that remain unchanged.",
+          "category": "Category 3"
+        },
+        {
+          "index": 8,
+          "question": "What is hoisting in JavaScript?",
+          "answer": "Hoisting in JavaScript is a behavior where variable and function declarations are moved to the top of their containing scope during the compilation phase, before the code is executed. This means that regardless of where variables and functions are declared within their scope, they are accessible and can be used before they are formally declared in the code. <br><br>However, only the declarations are hoisted, not the initializations. This can sometimes lead to unexpected behavior if not understood properly, as it may seem that variables are used before they are declared, although it's actually due to hoisting. <br><br>In this example, even though x is logged before it's declared and initialized, it doesn't cause an error. This is because the declaration var x; is hoisted to the top of the scope, making x accessible throughout the function, albeit with an initial value of undefined. <br><br>In this case, trying to access y before its declaration results in a ReferenceError. This is because let variables are not initialized until their actual declaration, unlike var variables which are initialized with undefined during hoisting.",
+          "image": "/images/hoisting.png",
+          "category": "Category 3"
+        },
+        {
+          "index": 9,
+          "question": "What are JavaScript data types?",
+          "answer": "JavaScript has several data types, including primitive types such as numbers, strings, booleans, null, undefined, and symbols, as well as complex types such as objects, arrays and functions. Each data type has its own characteristics and behavior when used in JavaScript code.",
+          "image": "/images/datatypes.png",
+          "category": "Category 3"
+        },
+        {
+          "index": 10,
+          "question": "Explain the difference between null and undefined in JavaScript.",
+          "answer": "In JavaScript, null represents the intentional absence of any value, while undefined indicates that a variable has been declared but has not been assigned a value. null is a primitive value, whereas undefined is a type and a value. null is often used to explicitly indicate that a variable has no value, while undefined typically indicates unintentional absence or an uninitialized state.",
+          "category": "Category 3"
+        },
+        {
+          "index": 8,
+          "question": "What is hoisting in JavaScript?",
+          "answer": "Hoisting in JavaScript is a behavior where variable and function declarations are moved to the top of their containing scope during the compilation phase, before the code is executed. This means that regardless of where variables and functions are declared within their scope, they are accessible and can be used before they are formally declared in the code. <br><br>However, only the declarations are hoisted, not the initializations. This can sometimes lead to unexpected behavior if not understood properly, as it may seem that variables are used before they are declared, although it's actually due to hoisting. <br><br>In this example, even though x is logged before it's declared and initialized, it doesn't cause an error. This is because the declaration var x; is hoisted to the top of the scope, making x accessible throughout the function, albeit with an initial value of undefined. <br><br>In this case, trying to access y before its declaration results in a ReferenceError. This is because let variables are not initialized until their actual declaration, unlike var variables which are initialized with undefined during hoisting.",
+          "image": "/images/hoisting.png",
+          "category": "Category 3"
+        },
+        {
+          "index": 8,
+          "question": "What is hoisting in JavaScript?",
+          "answer": "Hoisting in JavaScript is a behavior where variable and function declarations are moved to the top of their containing scope during the compilation phase, before the code is executed. This means that regardless of where variables and functions are declared within their scope, they are accessible and can be used before they are formally declared in the code. <br><br>However, only the declarations are hoisted, not the initializations. This can sometimes lead to unexpected behavior if not understood properly, as it may seem that variables are used before they are declared, although it's actually due to hoisting. <br><br>In this example, even though x is logged before it's declared and initialized, it doesn't cause an error. This is because the declaration var x; is hoisted to the top of the scope, making x accessible throughout the function, albeit with an initial value of undefined. <br><br>In this case, trying to access y before its declaration results in a ReferenceError. This is because let variables are not initialized until their actual declaration, unlike var variables which are initialized with undefined during hoisting.",
+          "image": "/images/hoisting.png",
+          "category": "Category 3"
+        },
+        {
+          "index": 8,
+          "question": "What is hoisting in JavaScript?",
+          "answer": "Hoisting in JavaScript is a behavior where variable and function declarations are moved to the top of their containing scope during the compilation phase, before the code is executed. This means that regardless of where variables and functions are declared within their scope, they are accessible and can be used before they are formally declared in the code. <br><br>However, only the declarations are hoisted, not the initializations. This can sometimes lead to unexpected behavior if not understood properly, as it may seem that variables are used before they are declared, although it's actually due to hoisting. <br><br>In this example, even though x is logged before it's declared and initialized, it doesn't cause an error. This is because the declaration var x; is hoisted to the top of the scope, making x accessible throughout the function, albeit with an initial value of undefined. <br><br>In this case, trying to access y before its declaration results in a ReferenceError. This is because let variables are not initialized until their actual declaration, unlike var variables which are initialized with undefined during hoisting.",
+          "image": "/images/hoisting.png",
+          "category": "Category 3"
+        },
+        {
+          "index": 8,
+          "question": "What is hoisting in JavaScript?",
+          "answer": "Hoisting in JavaScript is a behavior where variable and function declarations are moved to the top of their containing scope during the compilation phase, before the code is executed. This means that regardless of where variables and functions are declared within their scope, they are accessible and can be used before they are formally declared in the code. <br><br>However, only the declarations are hoisted, not the initializations. This can sometimes lead to unexpected behavior if not understood properly, as it may seem that variables are used before they are declared, although it's actually due to hoisting. <br><br>In this example, even though x is logged before it's declared and initialized, it doesn't cause an error. This is because the declaration var x; is hoisted to the top of the scope, making x accessible throughout the function, albeit with an initial value of undefined. <br><br>In this case, trying to access y before its declaration results in a ReferenceError. This is because let variables are not initialized until their actual declaration, unlike var variables which are initialized with undefined during hoisting.",
+          "image": "/images/hoisting.png",
+          "category": "Category 3"
+        },
+        {
+          "index": 8,
+          "question": "What is hoisting in JavaScript?",
+          "answer": "Hoisting in JavaScript is a behavior where variable and function declarations are moved to the top of their containing scope during the compilation phase, before the code is executed. This means that regardless of where variables and functions are declared within their scope, they are accessible and can be used before they are formally declared in the code. <br><br>However, only the declarations are hoisted, not the initializations. This can sometimes lead to unexpected behavior if not understood properly, as it may seem that variables are used before they are declared, although it's actually due to hoisting. <br><br>In this example, even though x is logged before it's declared and initialized, it doesn't cause an error. This is because the declaration var x; is hoisted to the top of the scope, making x accessible throughout the function, albeit with an initial value of undefined. <br><br>In this case, trying to access y before its declaration results in a ReferenceError. This is because let variables are not initialized until their actual declaration, unlike var variables which are initialized with undefined during hoisting.",
+          "image": "/images/hoisting.png",
+          "category": "Category 3"
+        },
+        {
+          "index": 8,
+          "question": "What is hoisting in JavaScript?",
+          "answer": "Hoisting in JavaScript is a behavior where variable and function declarations are moved to the top of their containing scope during the compilation phase, before the code is executed. This means that regardless of where variables and functions are declared within their scope, they are accessible and can be used before they are formally declared in the code. <br><br>However, only the declarations are hoisted, not the initializations. This can sometimes lead to unexpected behavior if not understood properly, as it may seem that variables are used before they are declared, although it's actually due to hoisting. <br><br>In this example, even though x is logged before it's declared and initialized, it doesn't cause an error. This is because the declaration var x; is hoisted to the top of the scope, making x accessible throughout the function, albeit with an initial value of undefined. <br><br>In this case, trying to access y before its declaration results in a ReferenceError. This is because let variables are not initialized until their actual declaration, unlike var variables which are initialized with undefined during hoisting.",
+          "image": "/images/hoisting.png",
+          "category": "Category 3"
+        },
+        {
+          "index": 8,
+          "question": "What is hoisting in JavaScript?",
+          "answer": "Hoisting in JavaScript is a behavior where variable and function declarations are moved to the top of their containing scope during the compilation phase, before the code is executed. This means that regardless of where variables and functions are declared within their scope, they are accessible and can be used before they are formally declared in the code. <br><br>However, only the declarations are hoisted, not the initializations. This can sometimes lead to unexpected behavior if not understood properly, as it may seem that variables are used before they are declared, although it's actually due to hoisting. <br><br>In this example, even though x is logged before it's declared and initialized, it doesn't cause an error. This is because the declaration var x; is hoisted to the top of the scope, making x accessible throughout the function, albeit with an initial value of undefined. <br><br>In this case, trying to access y before its declaration results in a ReferenceError. This is because let variables are not initialized until their actual declaration, unlike var variables which are initialized with undefined during hoisting.",
+          "image": "/images/hoisting.png",
+          "category": "Category 3"
+        },
+        {
+          "index": 8,
+          "question": "What is hoisting in JavaScript?",
+          "answer": "Hoisting in JavaScript is a behavior where variable and function declarations are moved to the top of their containing scope during the compilation phase, before the code is executed. This means that regardless of where variables and functions are declared within their scope, they are accessible and can be used before they are formally declared in the code. <br><br>However, only the declarations are hoisted, not the initializations. This can sometimes lead to unexpected behavior if not understood properly, as it may seem that variables are used before they are declared, although it's actually due to hoisting. <br><br>In this example, even though x is logged before it's declared and initialized, it doesn't cause an error. This is because the declaration var x; is hoisted to the top of the scope, making x accessible throughout the function, albeit with an initial value of undefined. <br><br>In this case, trying to access y before its declaration results in a ReferenceError. This is because let variables are not initialized until their actual declaration, unlike var variables which are initialized with undefined during hoisting.",
+          "image": "/images/hoisting.png",
+          "category": "Category 3"
+        },
+        {
+          "index": 8,
+          "question": "What is hoisting in JavaScript?",
+          "answer": "Hoisting in JavaScript is a behavior where variable and function declarations are moved to the top of their containing scope during the compilation phase, before the code is executed. This means that regardless of where variables and functions are declared within their scope, they are accessible and can be used before they are formally declared in the code. <br><br>However, only the declarations are hoisted, not the initializations. This can sometimes lead to unexpected behavior if not understood properly, as it may seem that variables are used before they are declared, although it's actually due to hoisting. <br><br>In this example, even though x is logged before it's declared and initialized, it doesn't cause an error. This is because the declaration var x; is hoisted to the top of the scope, making x accessible throughout the function, albeit with an initial value of undefined. <br><br>In this case, trying to access y before its declaration results in a ReferenceError. This is because let variables are not initialized until their actual declaration, unlike var variables which are initialized with undefined during hoisting.",
+          "image": "/images/hoisting.png",
+          "category": "Category 3"
+        },
+        {
+          "index": 8,
+          "question": "What is hoisting in JavaScript?",
+          "answer": "Hoisting in JavaScript is a behavior where variable and function declarations are moved to the top of their containing scope during the compilation phase, before the code is executed. This means that regardless of where variables and functions are declared within their scope, they are accessible and can be used before they are formally declared in the code. <br><br>However, only the declarations are hoisted, not the initializations. This can sometimes lead to unexpected behavior if not understood properly, as it may seem that variables are used before they are declared, although it's actually due to hoisting. <br><br>In this example, even though x is logged before it's declared and initialized, it doesn't cause an error. This is because the declaration var x; is hoisted to the top of the scope, making x accessible throughout the function, albeit with an initial value of undefined. <br><br>In this case, trying to access y before its declaration results in a ReferenceError. This is because let variables are not initialized until their actual declaration, unlike var variables which are initialized with undefined during hoisting.",
+          "image": "/images/hoisting.png",
+          "category": "Category 3"
+        },
+        {
+          "index": 8,
+          "question": "What is hoisting in JavaScript?",
+          "answer": "Hoisting in JavaScript is a behavior where variable and function declarations are moved to the top of their containing scope during the compilation phase, before the code is executed. This means that regardless of where variables and functions are declared within their scope, they are accessible and can be used before they are formally declared in the code. <br><br>However, only the declarations are hoisted, not the initializations. This can sometimes lead to unexpected behavior if not understood properly, as it may seem that variables are used before they are declared, although it's actually due to hoisting. <br><br>In this example, even though x is logged before it's declared and initialized, it doesn't cause an error. This is because the declaration var x; is hoisted to the top of the scope, making x accessible throughout the function, albeit with an initial value of undefined. <br><br>In this case, trying to access y before its declaration results in a ReferenceError. This is because let variables are not initialized until their actual declaration, unlike var variables which are initialized with undefined during hoisting.",
+          "image": "/images/hoisting.png",
           "category": "Category 3"
         }
       ]
