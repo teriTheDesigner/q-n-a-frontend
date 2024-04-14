@@ -19,7 +19,13 @@ function registerButtons() {
     .querySelector(".button.previous")
     .addEventListener("click", displayPreviousQuestion);
   document
+    .querySelector(".mobile-button.mobile-button-previous")
+    .addEventListener("click", displayPreviousQuestion);
+  document
     .querySelector(".button.next")
+    .addEventListener("click", displayNextQuestion);
+  document
+    .querySelector(".mobile-button.mobile-button-next")
     .addEventListener("click", displayNextQuestion);
   const buttons = document.querySelectorAll(".categories button");
   buttons.forEach((button) => {
@@ -154,20 +160,30 @@ function disableRandomCategoryButton() {
 
 function updateButtons() {
   const previousButton = document.querySelector(".button.previous");
+  const mobilePreviousButton = document.querySelector(
+    ".mobile-button.mobile-button-previous"
+  );
+  const mobileNextButton = document.querySelector(
+    ".mobile-button.mobile-button-next"
+  );
   const nextButton = document.querySelector(".button.next");
 
   if (currentCardIndex <= 0) {
     console.log(currentCardIndex, "currentCardIndex = 0");
     previousButton.classList.add("disabled");
+    mobilePreviousButton.classList.add("mobile-button-disabled");
   } else {
     console.log(currentCardIndex, "currentCardIndex else");
     previousButton.classList.remove("disabled");
+    mobilePreviousButton.classList.remove("mobile-button-disabled");
   }
 
   if (currentCardIndex >= displayedCards.length - 1) {
     nextButton.classList.add("disabled");
+    mobileNextButton.classList.add("mobile-button-disabled");
   } else {
     nextButton.classList.remove("disabled");
+    mobileNextButton.classList.remove("mobile-button-disabled");
   }
 }
 
