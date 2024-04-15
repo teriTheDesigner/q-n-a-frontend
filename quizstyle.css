@@ -1,0 +1,383 @@
+html,
+body {
+  margin: 0;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  max-width: 2000px;
+  margin: auto;
+  background: rgb(2, 11, 28);
+}
+
+.categories {
+  padding-top: 3rem;
+  padding-bottom: 7rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 3rem;
+}
+
+/* .roboto-mono-font {
+  font-family: "Roboto Mono", monospace;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+} */
+
+.categories button {
+  padding: 2rem;
+  border-radius: 8px;
+  color: rgb(0, 2, 12);
+  cursor: pointer;
+  font-size: 1.1rem;
+}
+.category1 {
+  background: rgb(60, 229, 212);
+
+  border: 2px solid rgb(60, 229, 212);
+  color: rgb(0, 2, 12);
+}
+.category2 {
+  background: #fdd253;
+  color: rgb(0, 2, 12);
+  border: 2px solid #fdd253;
+}
+.category3 {
+  background: rgb(255, 150, 250);
+
+  border: 2px solid rgb(255, 150, 250);
+  color: rgb(0, 2, 12);
+}
+.category4 {
+  background: #8bf56e;
+
+  border: 2px solid #8bf56e;
+  color: rgb(0, 2, 12);
+}
+.category5 {
+  background: rgb(117, 190, 246);
+
+  border: 2px solid rgb(117, 190, 246);
+  color: rgb(0, 2, 12);
+}
+
+.categories button:hover {
+  scale: 107%;
+  transition: 0.3s ease-in-out;
+}
+.random-category {
+  background: rgb(206, 147, 255);
+
+  border: 2px solid rgb(206, 147, 255);
+}
+
+.icon {
+  float: right;
+  padding: 1rem;
+  color: rgba(44, 44, 44, 0.5);
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5rem;
+  padding-bottom: 2rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+.button {
+  padding-left: 3rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-right: 3rem;
+  border: 2px solid rgb(255, 255, 255);
+  background-color: rgb(255, 255, 255);
+  border-radius: 12px;
+  cursor: pointer;
+}
+
+.hidden {
+  display: none;
+}
+
+.disabled {
+  background-color: rgba(244, 244, 244, 0.35);
+  border: 2px solid rgba(244, 244, 244, 0.05);
+  opacity: 50%;
+  pointer-events: none;
+  color: rgb(200, 200, 200);
+}
+
+.mobile-buttons {
+  display: none;
+}
+
+.display {
+  display: block;
+}
+
+.overlay {
+  width: 696px;
+  height: 396px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid rgba(244, 244, 244, 0.05);
+  font-size: 2rem;
+  color: rgb(169, 169, 169);
+  border-radius: 20px;
+  background-color: rgba(244, 244, 244, 0.17);
+}
+
+.container {
+  width: 700px;
+  height: 400px;
+  position: relative;
+  perspective: 800px;
+  border-radius: 20px;
+  opacity: 0;
+  transform: scale(0);
+  transition: opacity 0.5s ease, transform 0.3s ease-in-out;
+}
+
+.zoom-in {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.card {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  transform-style: preserve-3d;
+  transition: transform 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  border-radius: 20px;
+
+  cursor: pointer;
+}
+
+.card > div {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  border-radius: 20px;
+  box-sizing: border-box;
+  padding: 3.5rem;
+  line-height: 1.5;
+}
+
+.card .back {
+  transform: rotateY(180deg);
+  font-size: 1.1rem;
+  overflow-y: scroll;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  scrollbar-width: auto;
+  scrollbar-color: rgb(207, 233, 238) transparent;
+}
+
+.card .front {
+  font-size: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flipped {
+  transform: rotateY(180deg);
+}
+
+@keyframes zoomIn {
+  0% {
+    opacity: 0;
+    transform: scale(0);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes zoomOut {
+  0% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(0);
+  }
+}
+
+@media only screen and (min-width: 2000px) {
+  .categories {
+    padding-top: 7rem;
+    padding-bottom: 5rem;
+  }
+}
+
+@media only screen and (min-width: 1700px) {
+  .categories {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
+}
+
+@media only screen and (max-width: 1300px) {
+  .categories {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    gap: 2rem;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .categories button {
+    padding: 1.5rem;
+    border-radius: 8px;
+
+    cursor: pointer;
+    font-size: 1.2rem;
+  }
+  .button {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+  }
+  .card > div {
+    border-radius: 12px;
+    padding: 1.5rem;
+    line-height: 1.4;
+  }
+  .card .front {
+    font-size: 1.5rem;
+    align-items: flex-start;
+    padding-top: 8rem;
+  }
+  .icon {
+    display: none;
+  }
+  .overlay {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    font-size: 1.4rem;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .overlay {
+    height: 346px;
+    font-size: 1.3rem;
+    align-items: flex-start;
+    padding-top: 6rem;
+    border-radius: 12px;
+  }
+
+  .categories {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    gap: 1rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+  .categories button {
+    padding: 0.5rem;
+    font-size: 1rem;
+  }
+  .button {
+    display: none;
+  }
+  .container {
+    height: 450px;
+    border-radius: 12px;
+  }
+  main {
+    gap: 0rem;
+    margin-left: 5rem;
+    margin-right: 5rem;
+    padding-bottom: 2rem;
+  }
+
+  .mobile-buttons {
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 2rem;
+  }
+
+  .mobile-button {
+    border: 2px solid rgb(255, 255, 255);
+    background-color: rgb(255, 255, 255);
+    padding-left: 1rem;
+    padding-right: 1rem;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+
+  .mobile-button-disabled {
+    background-color: rgba(244, 244, 244, 0.35);
+    border: 2px solid rgba(244, 244, 244, 0.05);
+    opacity: 50%;
+    pointer-events: none;
+    color: rgb(200, 200, 200);
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  main {
+    gap: 0rem;
+    margin-left: 3rem;
+    margin-right: 3rem;
+    padding-bottom: 2rem;
+  }
+
+  .card > div {
+    border-radius: 12px;
+    padding: 1.5rem;
+    line-height: 1.4;
+  }
+  .card .front {
+    font-size: 1.5rem;
+    align-items: flex-start;
+    padding-top: 6rem;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  main {
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .container {
+    height: 350px;
+  }
+  .overlay {
+    height: 246px;
+    font-size: 1rem;
+    border-radius: 20px;
+  }
+}
+
+@media only screen and (max-width: 370px) {
+  .categories {
+    padding-left: 0.3rem;
+    padding-right: 0.3rem;
+  }
+  .categories button {
+    padding: 0.6rem;
+    border-radius: 6px;
+    font-size: 0.8rem;
+  }
+}
