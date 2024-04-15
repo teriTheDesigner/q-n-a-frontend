@@ -241,10 +241,17 @@ main {
   }
 }
 
+@media only screen and (min-width: 2000px) {
+  .categories {
+    padding-top: 7rem;
+    padding-bottom: 5rem;
+  }
+}
+
 @media only screen and (min-width: 1700px) {
   .categories {
-    padding-top: 15rem;
-    padding-bottom: 10rem;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
   }
 }
 
@@ -283,12 +290,17 @@ main {
   .icon {
     display: none;
   }
+  .overlay {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    font-size: 1.4rem;
+  }
 }
 
 @media only screen and (max-width: 700px) {
   .overlay {
     height: 346px;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     align-items: flex-start;
     padding-top: 6rem;
     border-radius: 12px;
@@ -376,6 +388,7 @@ main {
   }
   .overlay {
     height: 246px;
+    font-size: 1rem;
   }
   main {
     margin-left: 1rem;
