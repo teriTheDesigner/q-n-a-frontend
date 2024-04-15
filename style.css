@@ -10,10 +10,11 @@ body {
     rgb(1, 8, 40) 50%,
     rgb(1, 7, 35) 100%
   ); */
+
   background: radial-gradient(
     circle,
-    rgb(2, 8, 38) 15%,
-    rgb(1, 8, 20) 50%,
+    rgb(2, 8, 30) 10%,
+    rgb(1, 8, 20) 30%,
     rgb(0, 2, 12) 100%
   );
 
@@ -87,7 +88,7 @@ main {
   justify-content: center;
   align-items: center;
   gap: 5rem;
-  padding-bottom: 1rem;
+  padding-bottom: 2rem;
 }
 
 .button {
@@ -124,31 +125,12 @@ main {
   color: rgb(200, 200, 200);
 }
 
+.mobile-buttons {
+  display: none;
+}
+
 .display {
   display: block;
-}
-
-.mobile-buttons {
-  display: flex;
-  justify-content: space-around;
-  padding-bottom: 2rem;
-}
-
-.mobile-button {
-  border: 2px solid rgb(255, 255, 255);
-  background-color: rgb(255, 255, 255);
-  padding-left: 1rem;
-  padding-right: 1rem;
-  border-radius: 8px;
-  cursor: pointer;
-}
-
-.mobile-button-disabled {
-  background-color: rgba(244, 244, 244, 0.35);
-  border: 2px solid rgba(244, 244, 244, 0.05);
-  opacity: 50%;
-  pointer-events: none;
-  color: rgb(200, 200, 200);
 }
 
 .overlay {
@@ -257,9 +239,9 @@ main {
   }
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 700px) {
   .overlay {
-    height: 496px;
+    height: 346px;
     font-size: 1.5rem;
     align-items: flex-start;
     padding-top: 6rem;
@@ -270,6 +252,8 @@ main {
     padding-top: 2rem;
     padding-bottom: 2rem;
     gap: 1rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
   }
   .categories button {
     padding: 0.5rem;
@@ -279,14 +263,62 @@ main {
     display: none;
   }
   .container {
-    height: 600px;
+    height: 450px;
     border-radius: 12px;
   }
   main {
     gap: 0rem;
-    margin-left: 1rem;
-    margin-right: 1rem;
+    margin-left: 5rem;
+    margin-right: 5rem;
+    padding-bottom: 2rem;
   }
+  .card > div {
+    border-radius: 12px;
+    padding: 1.5rem;
+    line-height: 1.4;
+  }
+  .card .front {
+    font-size: 1.5rem;
+    align-items: flex-start;
+    padding-top: 8rem;
+  }
+
+  .icon {
+    display: none;
+  }
+
+  .mobile-buttons {
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 2rem;
+  }
+
+  .mobile-button {
+    border: 2px solid rgb(255, 255, 255);
+    background-color: rgb(255, 255, 255);
+    padding-left: 1rem;
+    padding-right: 1rem;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+
+  .mobile-button-disabled {
+    background-color: rgba(244, 244, 244, 0.35);
+    border: 2px solid rgba(244, 244, 244, 0.05);
+    opacity: 50%;
+    pointer-events: none;
+    color: rgb(200, 200, 200);
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  main {
+    gap: 0rem;
+    margin-left: 3rem;
+    margin-right: 3rem;
+    padding-bottom: 2rem;
+  }
+
   .card > div {
     border-radius: 12px;
     padding: 1.5rem;
@@ -297,16 +329,25 @@ main {
     align-items: flex-start;
     padding-top: 6rem;
   }
+}
 
-  .icon {
-    display: none;
+@media only screen and (max-width: 500px) {
+  main {
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
   }
 }
+
 @media only screen and (max-width: 400px) {
   .container {
-    height: 450px;
+    height: 350px;
   }
   .overlay {
-    height: 346px;
+    height: 246px;
+  }
+  main {
+    margin-left: 1rem;
+    margin-right: 1rem;
+    padding-bottom: 2rem;
   }
 }
