@@ -370,8 +370,8 @@ main {
   main {
     margin-left: 0.5rem;
     margin-right: 0.5rem;
-    padding-left: 0.3rem;
-    padding-right: 0.3rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
   }
 }
 
@@ -382,6 +382,7 @@ main {
   .overlay {
     height: 246px;
     font-size: 1rem;
+    border-radius: 20px;
   }
 }
 
@@ -391,7 +392,7 @@ main {
     padding-right: 0.3rem;
   }
   .categories button {
-    padding: 0.3rem;
+    padding: 0.6rem;
     border-radius: 6px;
     font-size: 0.8rem;
   }
