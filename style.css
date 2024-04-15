@@ -370,6 +370,8 @@ main {
   main {
     margin-left: 0.5rem;
     margin-right: 0.5rem;
+    padding-left: 0.3rem;
+    padding-right: 0.3rem;
   }
 }
 
@@ -380,5 +382,17 @@ main {
   .overlay {
     height: 246px;
     font-size: 1rem;
+  }
+}
+
+@media only screen and (max-width: 370px) {
+  .categories {
+    padding-left: 0.3rem;
+    padding-right: 0.3rem;
+  }
+  .categories button {
+    padding: 0.3rem;
+    border-radius: 6px;
+    font-size: 0.8rem;
   }
 }
