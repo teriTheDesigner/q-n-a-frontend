@@ -48,11 +48,17 @@ h2 {
   background-size: cover;
   width: 450px;
   height: 370px;
+
   animation: popout 0.5s ease-out;
   animation-delay: 0.4s;
 }
 .graphics-right {
-  width: 400px;
+  width: 450px;
+  display: flex;
+  flex-direction: column;
+}
+.graphics-left {
+  width: 450px;
   display: flex;
   flex-direction: column;
 }
@@ -132,9 +138,68 @@ a:hover {
 @keyframes dance {
   0%,
   100% {
-    transform: rotateY(0deg); /* Initial and final position */
+    transform: rotateY(0deg);
   }
   50% {
-    transform: rotateY(35deg); /* Rotate the button up */
+    transform: rotateY(35deg);
+  }
+}
+@media only screen and (max-width: 600px) {
+  .git,
+  .site,
+  .web {
+    display: none;
+  }
+  .pc {
+    width: 200px;
+    height: 170px;
+  }
+  .headphones {
+    width: 250px;
+    height: 200px;
+  }
+  .graphics-left {
+    width: 200px;
+    align-self: flex-start;
+  }
+  .graphics-right {
+    width: 250px;
+    align-self: flex-end;
+  }
+  main {
+    flex-direction: column;
+    justify-content: start;
+    gap: 4rem;
+    align-items: center;
+  }
+
+  h1 {
+    font-size: 6rem;
+  }
+  h1 span {
+    font-size: 3rem;
+  }
+  h2 {
+    font-size: 4rem;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .pc {
+    width: 120px;
+    height: 100px;
+  }
+  .headphones {
+    width: 150px;
+    height: 120px;
+  }
+  .graphics-left {
+    width: 150px;
+  }
+  .graphics-right {
+    width: 150px;
+  }
+  main {
+    gap: 2rem;
   }
 }
