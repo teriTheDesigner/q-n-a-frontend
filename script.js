@@ -120,7 +120,14 @@ function updateQuestion(category) {
   categoryQuestions.splice(randomIndex, 1);
   displayedCards.push(randomQuestion);
 
-  front.innerText = randomQuestion.question;
+  // front.innerText = randomQuestion.question;
+  if (randomQuestion.questionImage) {
+    front.classList.add("questionImage");
+    front.innerHTML = `${randomQuestion.question}<img src="${randomQuestion.questionImage}" alt="Question Image">`;
+  } else {
+    front.classList.remove("questionImage");
+    front.innerText = randomQuestion.question;
+  }
   if (randomQuestion.answerImage) {
     back.innerHTML = `${randomQuestion.answer}<img src="${randomQuestion.answerImage}" alt="Answer Image">`;
   } else {
@@ -239,7 +246,14 @@ function displayPreviousQuestion() {
   card.classList.remove("flipped");
 
   setTimeout(() => {
-    front.innerText = previousQuestion.question;
+    // front.innerText = previousQuestion.question;
+    if (previousQuestion.questionImage) {
+      front.classList.add("questionImage");
+      front.innerHTML = `${previousQuestion.question}<img src="${previousQuestion.questionImage}" alt="Question Image">`;
+    } else {
+      front.classList.remove("questionImage");
+      front.innerText = previousQuestion.question;
+    }
     if (previousQuestion.answerImage) {
       back.innerHTML = `${previousQuestion.answer}<img src="${previousQuestion.answerImage}" alt="Answer Image">`;
     } else {
@@ -284,7 +298,14 @@ function displayNextQuestion() {
   card.classList.remove("flipped");
 
   setTimeout(() => {
-    front.innerText = nextQuestion.question;
+    // front.innerText = nextQuestion.question;
+    if (nextQuestion.questionImage) {
+      front.classList.add("questionImage");
+      front.innerHTML = `${nextQuestion.question}<img src="${nextQuestion.questionImage}" alt="Question Image">`;
+    } else {
+      front.classList.remove("questionImage");
+      front.innerText = nextQuestion.question;
+    }
     if (nextQuestion.answerImage) {
       back.innerHTML = `${nextQuestion.answer}<img src="${nextQuestion.answerImage}" alt="Answer Image">`;
     } else {

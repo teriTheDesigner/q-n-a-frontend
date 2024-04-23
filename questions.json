@@ -181,6 +181,22 @@
           "answer": "Of course there are many different ways, here are some examples:",
           "answerImage": "/images/centerdiv.png",
           "category": "Category 2"
+        },
+        {
+          "index": 11,
+          "question": "What is CSS specificity and what will be the colour of the 2 paragraph elements?",
+          "questionImage": "/images/specificity.png",
+          "answer": "CSS specificity is how the browser determines which CSS property value should be applied to an HTML element if there are competing selectors.",
+          "answerImage": "/images/specificityAnswer.png",
+          "category": "Category 2"
+        },
+        {
+          "index": 12,
+          "question": "How do you calculate specificity?",
+          "questionImage": "",
+          "answer": "",
+          "answerImage": "",
+          "category": "Category 2"
         }
       ]
     },

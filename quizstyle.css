@@ -179,8 +179,8 @@ main {
   display: flex;
   flex-direction: column;
   gap: 2rem;
-  scrollbar-width: auto;
-  scrollbar-color: rgb(207, 233, 238) transparent;
+  /* scrollbar-width: auto;
+  scrollbar-color: rgb(207, 233, 238) transparent; */
 }
 
 .card .front {
@@ -188,6 +188,17 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.questionImage {
+  overflow-y: scroll;
+  flex-direction: column;
+  justify-content: flex-start !important;
+  gap: 2rem;
+}
+
+.card .front img {
+  max-width: 100%;
 }
 
 .flipped {
