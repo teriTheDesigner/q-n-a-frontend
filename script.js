@@ -121,8 +121,8 @@ function updateQuestion(category) {
   displayedCards.push(randomQuestion);
 
   front.innerText = randomQuestion.question;
-  if (randomQuestion.image) {
-    back.innerHTML = `${randomQuestion.answer}<img src="${randomQuestion.image}" alt="Answer Image">`;
+  if (randomQuestion.answerImage) {
+    back.innerHTML = `${randomQuestion.answer}<img src="${randomQuestion.answerImage}" alt="Answer Image">`;
   } else {
     back.innerText = randomQuestion.answer;
   }
@@ -240,8 +240,8 @@ function displayPreviousQuestion() {
 
   setTimeout(() => {
     front.innerText = previousQuestion.question;
-    if (previousQuestion.image) {
-      back.innerHTML = `${previousQuestion.answer}<img src="${previousQuestion.image}" alt="Answer Image">`;
+    if (previousQuestion.answerImage) {
+      back.innerHTML = `${previousQuestion.answer}<img src="${previousQuestion.answerImage}" alt="Answer Image">`;
     } else {
       back.innerText = previousQuestion.answer;
     }
@@ -285,8 +285,8 @@ function displayNextQuestion() {
 
   setTimeout(() => {
     front.innerText = nextQuestion.question;
-    if (nextQuestion.image) {
-      back.innerHTML = `${nextQuestion.answer}<img src="${nextQuestion.image}" alt="Answer Image">`;
+    if (nextQuestion.answerImage) {
+      back.innerHTML = `${nextQuestion.answer}<img src="${nextQuestion.answerImage}" alt="Answer Image">`;
     } else {
       back.innerText = nextQuestion.answer;
     }

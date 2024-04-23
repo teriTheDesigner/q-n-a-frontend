@@ -25,7 +25,7 @@
           "index": 4,
           "question": "What are the primary HTTP request methods and their purposes?",
           "answer": "The primary HTTP request methods are GET, POST, PUT, DELETE, and HEAD. GET is used to request data from a specified resource, POST is used to submit data to be processed to a specified resource, PUT is used to upload data to a specified resource, DELETE is used to delete a specified resource, and HEAD is used to request headers from a specified resource without transferring the entire content.",
-          "image": "/images/httprequests.png",
+          "answerImage": "/images/httprequests.png",
           "category": "Category 1"
         },
         {
@@ -50,7 +50,7 @@
           "index": 8,
           "question": "What are the main components of a URL?",
           "answer": "The main components of a URL include the protocol (e.g., HTTP, HTTPS), the domain name (e.g., www.example.com), the port number (optional, default is 80 for HTTP and 443 for HTTPS), the path to the resource (e.g., /index.html), and optional query parameters (e.g., ?id=123).",
-          "image": "/images/urlparts.png",
+          "answerImage": "/images/urlparts.png",
           "category": "Category 1"
         },
         {
@@ -140,7 +140,7 @@
           "index": 4,
           "question": "What is the box model in CSS and how does it work?",
           "answer": "The box model in CSS describes how elements are rendered on a web page by defining the content area, padding, border, and margin of each element. It consists of four components: content (the actual content of the element), padding (the space between the content and the border), border (the border around the padding), and margin (the space outside the border).",
-          "image": "/images/boxmodel.png",
+          "answerImage": "/images/boxmodel.png",
           "category": "Category 2"
         },
         {
@@ -159,7 +159,7 @@
           "index": 7,
           "question": "Explain the purpose of the meta tag in HTML.",
           "answer": "The meta tag in HTML is used to provide metadata about the HTML document. Metadata includes information such as the character encoding, viewport settings, author, description, keywords, and more. Meta tags are placed within the <head> section of an HTML document and are not displayed on the web page itself but are used by browsers, search engines, and other web services.",
-          "image": "/images/meta.png",
+          "answerImage": "/images/meta.png",
           "category": "Category 2"
         },
         {
@@ -172,14 +172,14 @@
           "index": 9,
           "question": "Describe the purpose of the <DOCTYPE> declaration in HTML.",
           "answer": "The declaration specifies the document type and version of the HTML standard used in an HTML document. It is placed at the beginning of the document before the <html> tag and informs web browsers about the rules and syntax to use when parsing and rendering the document. The correct <!DOCTYPE> declaration ensures that web pages are displayed consistently across different browsers and devices and helps avoid compatibility issues and quirks mode rendering.",
-          "image": "/images/doctype.png",
+          "answerImage": "/images/doctype.png",
           "category": "Category 2"
         },
         {
           "index": 10,
           "question": "What are 3 ways to center a div?",
           "answer": "Of course there are many different ways, here are some examples:",
-          "image": "/images/centerdiv.png",
+          "answerImage": "/images/centerdiv.png",
           "category": "Category 2"
         }
       ]
@@ -204,7 +204,7 @@
           "index": 3,
           "question": "Explain the difference between == and === in JavaScript.",
           "answer": "In JavaScript, the == operator checks if two values are equal, even if they're different types. It converts them to the same type before comparing. The === operator, however, checks for strict equality. It compares both the value and the type of the values, returning true only if they're exactly the same.",
-          "image": "/images/equal.png",
+          "answerImage": "/images/equal.png",
           "category": "Category 3"
         },
         {
@@ -235,14 +235,14 @@
           "index": 8,
           "question": "What is hoisting in JavaScript?",
           "answer": "Hoisting in JavaScript is a behavior where variable and function declarations are moved to the top of their containing scope during the compilation phase, before the code is executed. This means that regardless of where variables and functions are declared within their scope, they are accessible and can be used before they are formally declared in the code. <br><br>However, only the declarations are hoisted, not the initializations. This can sometimes lead to unexpected behavior if not understood properly, as it may seem that variables are used before they are declared, although it's actually due to hoisting. <br><br>In this example, even though x is logged before it's declared and initialized, it doesn't cause an error. This is because the declaration var x; is hoisted to the top of the scope, making x accessible throughout the function, albeit with an initial value of undefined. <br><br>In this case, trying to access y before its declaration results in a ReferenceError. This is because let variables are not initialized until their actual declaration, unlike var variables which are initialized with undefined during hoisting.",
-          "image": "/images/hoisting.png",
+          "answerImage": "/images/hoisting.png",
           "category": "Category 3"
         },
         {
           "index": 9,
           "question": "What are JavaScript data types?",
           "answer": "JavaScript has several data types, including primitive types such as numbers, strings, booleans, null, undefined, and symbols, as well as complex types such as objects, arrays and functions. Each data type has its own characteristics and behavior when used in JavaScript code.",
-          "image": "/images/datatypes.png",
+          "answerImage": "/images/datatypes.png",
           "category": "Category 3"
         },
         {
@@ -291,34 +291,6 @@
           "index": 17,
           "question": "How do you handle errors in JavaScript?",
           "answer": "Error handling in JavaScript involves using try-catch blocks to catch and handle exceptions that may occur during the execution of code. The try block contains the code that may throw an exception, while the catch block handles the exception if one occurs, allowing the program to gracefully recover from errors. Additionally, JavaScript provides built-in error objects such as Error, SyntaxError, TypeError, and ReferenceError to represent different types of errors, which can be used to provide more detailed information about the error to the developer or user.",
-          "category": "Category 3"
-        },
-        {
-          "index": 8,
-          "question": "What is hoisting in JavaScript?",
-          "answer": "Hoisting in JavaScript is a behavior where variable and function declarations are moved to the top of their containing scope during the compilation phase, before the code is executed. This means that regardless of where variables and functions are declared within their scope, they are accessible and can be used before they are formally declared in the code. <br><br>However, only the declarations are hoisted, not the initializations. This can sometimes lead to unexpected behavior if not understood properly, as it may seem that variables are used before they are declared, although it's actually due to hoisting. <br><br>In this example, even though x is logged before it's declared and initialized, it doesn't cause an error. This is because the declaration var x; is hoisted to the top of the scope, making x accessible throughout the function, albeit with an initial value of undefined. <br><br>In this case, trying to access y before its declaration results in a ReferenceError. This is because let variables are not initialized until their actual declaration, unlike var variables which are initialized with undefined during hoisting.",
-          "image": "/images/hoisting.png",
-          "category": "Category 3"
-        },
-        {
-          "index": 8,
-          "question": "What is hoisting in JavaScript?",
-          "answer": "Hoisting in JavaScript is a behavior where variable and function declarations are moved to the top of their containing scope during the compilation phase, before the code is executed. This means that regardless of where variables and functions are declared within their scope, they are accessible and can be used before they are formally declared in the code. <br><br>However, only the declarations are hoisted, not the initializations. This can sometimes lead to unexpected behavior if not understood properly, as it may seem that variables are used before they are declared, although it's actually due to hoisting. <br><br>In this example, even though x is logged before it's declared and initialized, it doesn't cause an error. This is because the declaration var x; is hoisted to the top of the scope, making x accessible throughout the function, albeit with an initial value of undefined. <br><br>In this case, trying to access y before its declaration results in a ReferenceError. This is because let variables are not initialized until their actual declaration, unlike var variables which are initialized with undefined during hoisting.",
-          "image": "/images/hoisting.png",
-          "category": "Category 3"
-        },
-        {
-          "index": 8,
-          "question": "What is hoisting in JavaScript?",
-          "answer": "Hoisting in JavaScript is a behavior where variable and function declarations are moved to the top of their containing scope during the compilation phase, before the code is executed. This means that regardless of where variables and functions are declared within their scope, they are accessible and can be used before they are formally declared in the code. <br><br>However, only the declarations are hoisted, not the initializations. This can sometimes lead to unexpected behavior if not understood properly, as it may seem that variables are used before they are declared, although it's actually due to hoisting. <br><br>In this example, even though x is logged before it's declared and initialized, it doesn't cause an error. This is because the declaration var x; is hoisted to the top of the scope, making x accessible throughout the function, albeit with an initial value of undefined. <br><br>In this case, trying to access y before its declaration results in a ReferenceError. This is because let variables are not initialized until their actual declaration, unlike var variables which are initialized with undefined during hoisting.",
-          "image": "/images/hoisting.png",
-          "category": "Category 3"
-        },
-        {
-          "index": 8,
-          "question": "What is hoisting in JavaScript?",
-          "answer": "Hoisting in JavaScript is a behavior where variable and function declarations are moved to the top of their containing scope during the compilation phase, before the code is executed. This means that regardless of where variables and functions are declared within their scope, they are accessible and can be used before they are formally declared in the code. <br><br>However, only the declarations are hoisted, not the initializations. This can sometimes lead to unexpected behavior if not understood properly, as it may seem that variables are used before they are declared, although it's actually due to hoisting. <br><br>In this example, even though x is logged before it's declared and initialized, it doesn't cause an error. This is because the declaration var x; is hoisted to the top of the scope, making x accessible throughout the function, albeit with an initial value of undefined. <br><br>In this case, trying to access y before its declaration results in a ReferenceError. This is because let variables are not initialized until their actual declaration, unlike var variables which are initialized with undefined during hoisting.",
-          "image": "/images/hoisting.png",
           "category": "Category 3"
         }
       ]
