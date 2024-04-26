@@ -186,7 +186,7 @@
           "index": 11,
           "question": "What is CSS specificity and what will be the colour of the 2 paragraph elements?",
           "questionImage": "/images/specificity.png",
-          "answer": "CSS specificity is how the browser determines which CSS property value should be applied to an HTML element if there are competing selectors.",
+          "answer": "CSS specificity is how the browser determines which CSS property value should be applied to an HTML element if there are competing selectors. Inline styles have the highest specificity, meaning they will always override styles defined in external or internal stylesheets. Following inline styles are ID selectors, which target specific HTML elements based on their unique IDs. Then come class selectors, attribute selectors, and pseudo-classes, each with decreasing specificity. Finally, element selectors have the lowest specificity. As you can see from this example, the class selector for Paragraph 1 has a higher specificity than the element selector, which is why  different color is applied.",
           "answerImage": "/images/specificityAnswer.png",
           "category": "Category 2"
         },
@@ -194,8 +194,8 @@
           "index": 12,
           "question": "How do you calculate specificity?",
           "questionImage": "",
-          "answer": "",
-          "answerImage": "",
+          "answer": "Specificity is calculated based on the types of selectors used in a CSS rule. Each selector type contributes to the specificity score, with higher scores indicating higher specificity. Inline styles have the highest specificity (1,0,0,0), followed by ID selectors (0,1,0,0), class selectors (0,0,1,0), attribute selectors (0,0,0,1), and pseudo-classes (0,0,0,1). The count for each type of selector is summed up to determine the specificity score. If two rules have the same specificity, the one declared later in the CSS file will be applied due to the cascading nature of CSS.",
+          "answerImage": "/images/calSpecificity.png",
           "category": "Category 2"
         }
       ]
