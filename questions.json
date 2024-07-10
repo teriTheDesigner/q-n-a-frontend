@@ -316,32 +316,80 @@
       "questions": [
         {
           "index": 1,
-          "question": "What is a server?",
-          "answer": "A server is a computer or software program that provides functionality or services to other programs or devices, known as clients, over a network.",
+          "question": "What is Vue.js?",
+          "answer": "Vue.js is a progressive JavaScript framework used for building user interfaces (UIs) and single-page applications (SPAs).",
           "category": "Category 4"
         },
         {
           "index": 2,
-          "question": "What is HTTP?",
-          "answer": "HTTP (Hypertext Transfer Protocol) is a protocol used for transmitting data over the Internet.",
+          "question": "What are the key features of Vue 3?",
+          "answer": "Vue 3 introduces several key features including Composition API, Teleport, Fragments, Suspense, and improved TypeScript support.",
           "category": "Category 4"
         },
         {
           "index": 3,
-          "question": "What is RESTful API?",
-          "answer": "A RESTful API is an architectural style for designing networked applications, where resources are represented as URIs (Uniform Resource Identifiers) and can be manipulated using standard HTTP methods.",
+          "question": "What is the Composition API in Vue 3?",
+          "answer": "The Composition API allows developers to organize component logic into reusable functions called composition functions, promoting better code organization and reusability.",
           "category": "Category 4"
         },
         {
           "index": 4,
-          "question": "What is a client-server model?",
-          "answer": "A client-server model is a distributed application structure in which tasks or workloads are divided between clients and servers.",
+          "question": "Explain Teleport in Vue 3.",
+          "answer": "Teleport is a new feature in Vue 3 that allows you to render a component's children to a different part of the DOM, helping with creating modal dialogs, tooltips, and other overlays.",
           "category": "Category 4"
         },
         {
           "index": 5,
-          "question": "What is a web server?",
-          "answer": "A web server is a software program that processes requests via HTTP, the basic network protocol used to distribute information on the World Wide Web.",
+          "question": "What are Fragments in Vue 3?",
+          "answer": "Fragments allow multiple children to be grouped together without needing an extra DOM element. This helps in simplifying the component structure.",
+          "category": "Category 4"
+        },
+        {
+          "index": 6,
+          "question": "What is Suspense in Vue 3?",
+          "answer": "Suspense is a feature in Vue 3 that allows components to define fallback content while waiting for asynchronous components to resolve their data.",
+          "category": "Category 4"
+        },
+        {
+          "index": 7,
+          "question": "How does Vue 3 handle reactivity differently from Vue 2?",
+          "answer": "Vue 3 uses a more efficient reactivity system (Vue 3 Reactivity) based on ES6 Proxies, offering better performance compared to Vue 2's Object.defineProperty-based system.",
+          "category": "Category 4"
+        },
+        {
+          "index": 8,
+          "question": "Explain the changes in the template syntax in Vue 3.",
+          "answer": "Vue 3 introduces the v-model directive that provides a more consistent and flexible way to work with form inputs and custom components.",
+          "category": "Category 4"
+        },
+        {
+          "index": 9,
+          "question": "What is the role of the reactive and ref functions in Vue 3?",
+          "answer": "reactive and ref are functions in Vue 3 used for creating reactive objects and primitive values respectively, enabling Vue's reactivity system.",
+          "category": "Category 4"
+        },
+        {
+          "index": 10,
+          "question": "How does Vue 3 handle template compilation?",
+          "answer": "Vue 3 uses a streamlined template compilation process with a more efficient and modular compiler architecture, resulting in faster template updates.",
+          "category": "Category 4"
+        },
+        {
+          "index": 11,
+          "question": "What is the watchEffect function in Vue 3?",
+          "answer": "watchEffect is a function in Vue 3 that automatically tracks reactive dependencies used inside its callback, re-running the callback whenever any tracked dependency changes.",
+          "category": "Category 4"
+        },
+        {
+          "index": 12,
+          "question": "How can you optimize performance in Vue 3 applications?",
+          "answer": "Performance optimization techniques in Vue 3 include using reactive and ref appropriately, leveraging watchEffect for reactive updates, optimizing component rendering with shouldComponentUpdate, and using production builds for smaller bundle sizes.",
+          "category": "Category 4"
+        },
+        {
+          "index": 13,
+          "question": "What are composables in Vue 3?",
+          "answer": "Answer: Composables in Vue 3 are functions that encapsulate reusable logic and state management, designed to be composable (hence the name) and shareable across multiple components. They leverage the Composition API to encapsulate reactive state, computed properties, methods, and lifecycle hooks in a way that promotes code organization and reusability. Composables typically return reactive objects or functions that can be directly used in Vue components, enhancing maintainability and scalability of Vue applications.",
           "category": "Category 4"
         }
       ]
